@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Symplectic/Contact Geometry VII at Les Diablerets, Day 1</title>
+<!-- 2018-01-31 Wed 15:55 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a></div>
+</div>
+<div id="content">
+<h1 class="title">Symplectic/Contact Geometry VII at Les Diablerets, Day 1</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Symplectic/Contact Geometry VII at Les Diablerets, Day 1</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2013-01-11 Fri]</span></span>
+</p>
+
+<p>
+I'm currently in Switzerland at the seventh <a href="http://members.unine.ch/felix.schlenk/CASTmeeting/index.html">"Symplectic Geometry,
+Contact Geometry and Interactions"</a> Workshop funded by <a href="http://cast.ulb.ac.be/">CAST</a>. This is a
+yearly conference which started at the same time I started my PhD so I
+have a great fondness for these workshops. This one is in the
+mountains, which makes me even fonder&#x2026;
+</p>
+
+
+<div class="figure">
+<p><img src="../img/mountain.jpg" alt="mountain.jpg" />
+</p>
+</div>
+
+<p>
+After three excellent talks today I decided to act as a "maths journalist" and summarise the main ideas from the talks in this blog. I may not be able to keep this up, as there's six talks tomorrow and too much snow to enjoy. Today's talks were:
+</p>
+
+<ul class="org-ul">
+<li>Urs Frauenfelder "A \(\Gamma\)-structure on the Lagrangian Grassmannian"
+</li>
+<li>Yochay Jerby "The symplectic topology of projective manifolds with
+small dual"
+</li>
+<li>Alex Ritter "Floer theory for negative line bundles"
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Urs Frauenfelder: A &Gamma;-structure on the Lagrangian Grassmannian.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<i>(Joint with Peter Albers)</i> See <a href="http://arxiv.org/abs/1209.4505">arXiv:1209.4505</a>.
+</p>
+
+<p>
+This was a great way to start the conference – an elementary talk
+about the topology of one of our favourite spaces, the Lagrangian
+Grassmannian. Of course, its cohomology has been known for a long time
+(it's a homogeneous space \(U(n)/O(n)\) and there are spectral sequence
+techniques for computing such cohomology groups, see for example
+Toda-Mimura's books on the topology of Lie groups) – in the case when
+\(n\) is odd the rational cohomology is an exterior algebra on odd
+-degree generators. But the beauty of this talk was a simple geometric
+explanation of why we should get an exterior algebra on odd
+generators!
+</p>
+
+<p>
+The key definition of a \(\Gamma\)-structure is due to Hopf (1941). It
+generalises that of a Lie group multiplication \(m\colon G\times G\to
+G\). The essential topological fact about Lie group multipication maps
+is that restricting to \(\{g\}\times G\) or \(G\times\{g\}\) (i.e. left- or
+right-multiplication by \(g\)) gives you degree 1 maps \(L_g,R_g\colon
+G\to G\). Hopf defined a \(\Gamma\)-structure on an oriented, connected
+manifold \(M\) to be a map \(\Theta\colon M\times M\to M\) such that the
+restrictions \(_m\Theta:=\Theta|_{\{m\}\times M}\colon M\to M\) and
+\(\Theta_m:=\Theta|_{M\times\{m\}}\colon M\to M\) both have nonzero
+degree.
+</p>
+
+<p>
+This structure gives us (via pullback) a coproduct \(\Delta\colon
+H^*(M;\mathbf{Q})\otimes H^*(M;\mathbf{Q})\to H^*(M;\mathbf{Q})\) on
+the cohomology. This is enough to constrain the cohomology ring to
+being an exterior algebra on odd-dimensional generators (an amazing
+fact due to Hopf).
+</p>
+
+<p>
+The \(\Gamma\)-structure on the Lagrangian Grassmannian is most evident
+when you identify a Lagrangian subspace with the unique orthogonal
+antisymplectic involution having it as fixed locus. Given two such
+involutions \(R,S\) you can form the "product" \(RSR\) and this is the
+\(\Gamma\)-structure (with degrees \(-1\) and \(2^{\frac{n-1}{2}}\)). Urs
+explained this carefully and clearly and I found it particularly
+helpful to contemplate the instructive example \(n=1\) (when the
+Lagrangian Grassmannian is \(\mathbf{RP}^1\)).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Yochay Jerby: The symplectic topology of projective varieties with small dual.</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<i>(Joint with Paul Biran)</i> See <a href="http://arxiv.org/abs/1107.0174">arXiv:1107.0174</a>.
+</p>
+
+<p>
+It always pleases me when someone proves a result in algebraic
+geometry using symplectic techniques. This talk is a beautiful
+example. The dual of projective space is the space of hyperplanes in
+projective space (which is isomorphic to projective space). The dual
+of a subvariety is the variety of hyperplanes containing the tangent
+spaces of the subvariety. This is generically a hypersurface, but in
+certain special cases it has higher codimension. For example, the dual
+of a hyperplane is a point! These are called varieties with small dual
+and Yochay was talking about smooth varieties \(X\) with small dual.
+</p>
+
+<p>
+These have been much studied by algebraic geometers and turn out to be
+very special (for instance there are strong restrictions on their
+topology, including a 2-periodicity of the cohomology in some range of
+degrees). From a symplectic viewpoint they turn out to be special too:
+Biran and Jerby take a hyperplane section \(\Sigma\) and prove that the
+cohomology class of the Fubini-Study form is invertible, considered as
+an element of quantum cohomology of \(\Sigma\). They do this by showing
+that it arises as the Seidel element of a loop in the Hamiltonian
+group. Loops in the Hamiltonian group can be used as clutching
+functions to describe Hamiltonian fibrations over the sphere, and the
+Hamiltonian fibration in this case comes very naturally from the
+projective geometry: you take a line in the dual projective space
+which is disjoint from the dual variety of \(X\) (possible precisely
+because \(X\) has small dual!) and use these hyperplanes to cut out a
+family of smooth hyperplane sections \(\Sigma\) parametrised by this
+line. The Seidel element associated to this fibration is then an
+invertible element in quantum cohomology defined using some moduli
+spaces of sections of the fibration and the main theorem is to compute
+this and show it is indeed the cohomology class of the symplectic
+form.
+</p>
+
+<p>
+Having an invertible element in degree two means that the quantum
+cohomology is 2-periodic, but it is also graded by the minimal Chern
+number and using these two facts allows you to recover a refinement of
+the classical 2-periodicity theorem of the cohomology of varieties
+with small dual. Not only is the cohomology 2-periodic in some range
+but outside that range there is a periodicity of the quantum
+cohomology which translates into a periodicity of sums of Betti
+numbers which was not known (I think) via purely algebro-geometric
+techniques.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">Alex Ritter: Floer theory for negative line bundles.</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+<i>(Partly joint work with Ivan Smith)</i> See <a href="http://arxiv.org/abs/1106.3975">arXiv:1106.3975</a> and <a href="http://arxiv.org/abs/1201.5880">arXiv:1201.5880</a>.
+</p>
+
+<p>
+Faced with the monumental task of introducing (wrapped and unwrapped)
+Floer homology, symplectic homology and Fukaya categories as well as
+telling us about his theorem (all in the final hour before dinner),
+Alex rose to the challenge with a beautiful set of highly illustrated
+beamer slides.
+</p>
+
+<p>
+The spaces Alex was talking about are the total spaces of line bundles
+over symplectic manifolds (mostly \(\mathbf{CP}^n\)) such that the first
+Chern class is a negative multiple of the cohomology class of the
+symplectic form. For instance, \(\mathcal{O}(-1)\) over
+\(\mathbf{CP}^1\). These are noncompact symplectic manifolds with
+symplectic fibres and symplectic base and they are convex in the sense
+that a sequence of holomorphic curves cannot escape to infinity. The
+first theorem he proved was that the symplectic homology of such a
+space is a quotient of the quantum homology (symplectic homology is a
+Floer theory counting periodic orbits of a Hamiltonian which gets very
+big quite quickly in the noncompact end of the manifold, quantum
+homology just counts compact holomorphic spheres!). In particular you
+quotient by the kernel of a certain map: the quantum cup product with
+a high power of the first Chern class. When there are no spheres with
+positive symplectic area in the base (and hence in the total space)
+the quantum and classical cup products agree and hence a sufficiently
+large power of the first Chern class vanishes, to the whole quantum
+cohomology is in its kernel, which recovers an older result of Oancea
+(that assuming there are no spheres with positive symplectic area the
+symplectic homology vanishes). The idea of the proof was the
+following: symplectic homology is defined as a limit of Floer
+homologies for a sequence of Hamitonians. For a suitable choice of
+these Hamiltonians you can ensure that each of these Floer homologies
+is isomorphic to quantum cohomology (roughly speaking you rotate the
+fibre in such a way as to ensure that all closed orbits lie in the
+zero section) and the maps in the sequence are precisely
+multiplications by the first Chern class.
+</p>
+
+<p>
+Not satisfied with this, Alex raised the stakes algebraically and
+introduced the "open-closed string map" (one of the more complicated,
+though increasingly central, aspects of the Fukaya/Floer story). This
+is a map from the Hochschild cohomology of the Fukaya category to the
+quantum homology. I think (hope) I'm right in saying the
+following. For a single Lagrangian \(L\) it takes a collection of cycles
+("inputs" – the Hochschild cohomology having as its $n$th chain group
+the tensor product of \(n\) copies of the Floer chain group of \(L\)) to
+an ambient cycle. The ambient cycle is traced out by a marked point on
+a holomorphic disc with as many marked points as there are inputs
+where each point point is required to be mapped to the corresponding
+cycle. Mad. And then he raised the stakes yet more by introducing the
+analogous map from the wrapped Fukaya category to the symplectic
+homology.
+</p>
+
+<p>
+Why? Well Abouzaid recently proved a criterion for when a Lagrangian
+(or collection of Lagrangians) split-generates the Fukaya category (or
+some part of it) by looking at the image of this open-closed string
+map. Ritter and Smith have adapted this to the monotone setting they
+need for these negative line bundles. Using this criterion (namely
+that the image should contain some invertible element) they prove that
+you only need a single Lagrangian to split-generate the wrapped Fukaya
+category of a negative line bundle over \(\mathbf{CP}^n\) (for suitably
+low Chern class of the line bundle). The Lagrangian in question is the
+circle bundle living over the Clifford torus (which, when taken with
+various flat connections, generates all the various parts of the
+Fukaya category). In particular, the wrapped category is generated by
+a compact Lagrangian, so this proves that all the potential
+infinite-dimensionality introduced by wrapped Floer cohomology is
+actually only finite-dimensional (in the same way that the symplectic
+cohomology reduced to a quotient of quantum cohomology).
+</p>
+
+<p>
+At this point, Alex brought the discussion back down to earth by
+discussing the equator in the sphere (one of the most instructive
+Lagrangian submanifolds, well worth your contemplation). Then we went
+for tea.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

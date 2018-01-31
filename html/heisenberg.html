@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>The Heisenberg picture and causality</title>
+<!-- 2018-01-31 Wed 12:14 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a></div>
+</div>
+<div id="content">
+<h1 class="title">The Heisenberg picture and causality</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Different pictures</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Schr&ouml;dinger picture</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+In the Schr&ouml;dinger picture of the Klein-Gordon field, the state
+of the system at any one time \(t\) is described by a vector
+\(|\psi(t)\rangle\) in a Hilbert space. As time varies, the state vector
+evolves according to the Schr&ouml;dinger equation:
+\[i\frac{d}{dt}|\psi(t)\rangle=H|\psi(t)\rangle,\]
+where \(H\) is the quantum Hamiltonian operator and we are working in
+units where \(\hbar=1\). The solution of this equation with initial
+state \(|\psi(0)\rangle\) is
+\[|\psi(t)\rangle=e^{-iHt}|\psi(0)\rangle,\]
+assuming the system is autonomous, that is the Hamiltonian has no time
+dependence.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">The Heisenberg picture</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The Heisenberg picture emphasises instead the operators \(A\) as
+dynamical objects which vary in time according to the Heisenberg
+equation \[\frac{d}{dt}A(t)=i[H,A(t)].\]
+If \(H\) is autonomous then a solution is given by
+\(A(t)=e^{iHt}A(0)e^{-iHt}\). Note that if \(|\psi(t)\rangle\) solves the
+Schr&ouml;dinger equation and \(A(t)\) solves the Heisenberg equation,
+then
+\[\langle\psi(0)|A(t)|\psi(0)\rangle=\langle\psi(t)|A(0)|\psi(t)\rangle,\]
+so the two pictures are equivalent as far as computing expectation
+values is concerned.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">Our favourite operators in the Heisenberg picture</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+For the Klein-Gordon system, the creation and annihilation operators,
+\(a_\mathbf{p}^\dagger\) and \(a_{\mathbf{p}}\), satisfy the following
+commutation relations with the Hamiltonian
+</p>
+\begin{align*}
+[H,a_{\mathbf{p}}]&=-\omega_{\mathbf{p}}a_{\mathbf{p}},\\
+[H,a^{\dagger}_{\mathbf{p}}]&=\omega_{\mathbf{p}}a^{\dagger}_{\mathbf{p}}.
+\end{align*}
+<p>
+The Heisenberg equation becomes
+</p>
+\begin{align*}
+\frac{d}{dt}a_{\mathbf{p}}(t)&=-i\omega_{\mathbf{p}}a_{\mathbf{p}},\\
+\frac{d}{dt}a^{\dagger}_{\mathbf{p}}(t)&=-i\omega_{\mathbf{p}}a^{\dagger}_{\mathbf{p}}
+\end{align*}
+<p>
+and the solutions are
+</p>
+\begin{align*}
+a_{\mathbf{p}}(t)&=e^{-i\omega_{mathbf{p}}}a_{\mathbf{p}}(0),\\
+a^{\dagger}_{\mathbf{p}}(t)&=e^{-i\omega_{mathbf{p}}}a^{\dagger}_{\mathbf{p}}(0).
+\end{align*}
+<p>
+The operators \(\phi(x)=\phi(\mathbf{x},t)\) and
+\(\pi(x)=\pi(\mathbf{x},t)\) are therefore given by
+</p>
+\begin{align*}
+\phi(x)&=\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}\left(a_{\mathbf{p}}(0)e^{-ip\cdot x}+a^{\dagger}_{\mathbf{p}}(0)e^{ip\cdot x}\right)\\
+\pi(x)&=-i\int\frac{d^3 p}{(2\pi)^3}\sqrt{\frac{\omega_{\mathbf{p}}}{2}}\left(a_{\mathbf{p}}(0)e^{-ip\cdot x}-a^{\dagger}_{\mathbf{p}}(0)e^{ip\cdot x}\right)
+\end{align*}
+<p>
+where \(p=(\omega_{\mathbf{p}},\mathbf{p})\) and \(p\cdot
+x=\omega_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">Causality</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Recall that
+\[[a_{\mathbf{p}},a^{\dagger}_{\mathbf{q}}]=(2\pi)^3\delta(\mathbf{p}-\mathbf{q}).\]
+Using this commutation relation, we have
+</p>
+\begin{align*}
+[\phi(x),\phi(y)]&=
+\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+\int\frac{d^3 q}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{q}}}}
+\left([a_{\mathbf{p}},a^{\dagger}_{\mathbf{q}}]e^{iq\cdot y-p\cdot x}
++[a^{\dagger}_{\mathbf{p}},a_{\mathbf{q}}]e^{ip\cdot x-q\cdot y}\right)\\
+&=\int\frac{d^3 p}{(2\pi)^3}\frac{1}{2\omega_{\mathbf{p}}}\left(e^{ip\cdot(y-x)}-e^{ip\cdot(x-y)}\right)\\
+&=D(x-y)-D(y-x),
+\end{align*}
+<p>
+where we have defined \[D(z):=\int\frac{d^3
+p}{(2\pi)^3}\frac{1}{2\omega_{\mathbf{p}}}e^{-ip\cdot z}.\] The
+function \(D(z)\) is Lorentz invariant (the integration measure \(d^3
+p/2\omega_{\mathbf{p}}\) is the Lorentz invariant measure on the mass
+shell and the integrand \(e^{-ip\cdot z}\) is certainly Lorentz
+invariant). If \(x\) and \(y\) are spacelike separated (\((x-y)^2<0\)),
+then, after a Lorentz transformation, we can assume that they lie on
+the spacelike slice \(t=0\). In that case the integrals \(D(x-y)\) and
+\(D(y-x)\) are equal when we make the change of variables
+\(\mathbf{p}\to-\mathbf{p}\), so, if \((x-y)^2<0\) we get
+\[[\phi(x),\phi(y)]=0.\]
+The quantum Klein-Gordon field is therefore causal: local operators at
+spacelike separations commute.
+</p>
+
+<p>
+Note that the amplitude \[\langle 0|\phi(x)\phi(y)|0\rangle\] for the
+process "particle is created at \(y\) and moves to \(x\) where it is
+destroyed" is equal to \(D(x-y)\). This is actually nonzero
+(exponentially decaying) outside the lightcone and oscillatory inside
+the lightcone. However, when \((x-y)^2<0\), this amplitude is cancelled
+by the process "particle is created at \(y\) and moves to \(x\) where it
+is destroyed", as the expectation value of the <i>commutator</i>
+\([\phi(x),\phi(y)]\) is zero.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">The propagator</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Consider the operators \(\phi(x)\) and \(\phi(y)\).
+</p>
+<ul class="org-ul">
+<li>The time-ordered product \(T\phi(x)\phi(y)\) is either
+\(\phi(x)\phi(y)\) or \(\phi(y)\phi(x)\) (if \(x^0>y^0\) or \(y^0\leq x^0\)
+respectively).
+</li>
+<li>The normal-ordered product \(:\phi(x)\phi(y):\) is the result of
+expressing \(\phi(x)\) and \(\phi(y)\) in terms of creation and
+annihilation operators, multiplying them together, and then, in each
+monomial built out of creation and annihilation operators, blithely
+moving all the creation operators to the left.
+</li>
+<li>Let \(\Delta_F(x-y)=\begin{cases}D(y-x)&\mbox{ if
+  }x^0>y^0,\\D(x-y)&\mbox{ if }y^0\geq x^0\end{cases}\). This is called
+the <i>Feynman propagator</i>.
+</li>
+</ul>
+
+<div class="theorem">
+<p>
+\[T\phi(x)\phi(y)=:\phi(x)\phi(y):+\Delta_F(x-y).\]
+</p>
+
+</div>
+<div class="proof">
+<p>
+We have
+\[\phi(x)=\phi^+(x)+\phi^-(x)\]
+where
+</p>
+\begin{align*}
+\phi^+(x)&=
+\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+a_{\mathbf{p}}e^{-ip\cdot x}\\
+\phi^-(x)&=
+\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}.
+\end{align*}
+<p>
+If we assume that \(x^0>y^0\) then
+</p>
+\begin{align*}
+T\phi(x)\phi(y)&=\phi(x)\phi(y)\\
+&=(\phi^+(x)+\phi^-(x))(\phi^+(y)+\phi^-(y))\\
+&=\phi^+(x)\phi^+(y)+\phi^-(x)\phi^+(y)
+  +\phi^+(x)\phi^-(y) +\phi^-(x)\phi^-(y).
+\end{align*}
+<p>
+All of the terms here are normal-ordered except
+\(\phi^+(x)\phi^-(y)\). We have
+\[\phi^+(x)\phi^-(y)=[\phi^+(x),\phi^-(y)]+\phi^-(y)\phi^+(x).\]
+The term \(\phi^-(y)\phi^+(x)\) is normal-ordered; moreover, we have
+</p>
+\begin{align*}
+[\phi^+(x),\phi^-(y)]&=
+\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+\int\frac{d^3 q}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{q}}}}
+\left[a_{\mathbf{p}},a^{\dagger}_{\mathbf{q}}\right]
+e^{i(q\cdot y-p\cdot x)}\\
+&=\int\frac{d^3 p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+\int\frac{d^3 q}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{q}}}}
+(2\pi)^3\delta(\mathbf{p}-\mathbf{q})\\
+&=\int\frac{d^3 p}{(2\pi)^3}\frac{1}{2\omega_{\mathbf{p}}}e^{ip\cdot(y-x)}\\
+&=D(y-x).
+\end{align*}
+<p>
+A similar calculation when \(y^0\geq x^0\) gives \(D(x-y)\).
+</p>
+
+</div>
+
+<div class="lemma">
+<p>
+The Feynman propagator can be written as \[\Delta_F(z)=\int\frac{d^3
+  p}{(2\pi)^3}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip\cdot
+  z}}{p^2-m^2},\] where the \(p^0\)-integral is taken along the
+following contour \(C\) in the complex \(p^0\)-plane:
+</p>
+
+
+<div class="figure">
+<p><img src="../img/contour.svg" alt="contour.svg" />  
+</p>
+</div>
+
+
+<p>
+where the two dots indicate the poles \(p^0=\pm\omega_{\mathbf{p}}\).
+</p>
+
+</div>
+<div class="proof">
+<p>
+If \(x^0>y^0\) then we can close the contour \(C\) with a "semicircle at
+infinity" in the lower half \(p^0\)-plane, \(p^0\sim Re^{i\theta}\) for
+large \(R\), as the factor \(e^{-ip^0(x^0-y^0)}\) in the integrand will
+tend to zero along this semicircle. The value of the line integral
+along \(C\) is therefore equal to the sum of residues of the integrand
+in the region of the plane below \(C\), in other words, the residue of
+the integrand at \(p^0=\omega_{\mathbf{p}}\). This is
+\(1/2\omega_\mathbf{p}\), giving
+\[\int\frac{d^3
+  p}{(2\pi)^3}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip\cdot
+  z}}{p^2-m^2}=D(y-x)\]
+when \(x^0>y^0\). Similarly, if \(x^0\leq y^0\) then we can close the
+contour in the upper half \(p^0\)-plane and we obtain
+\[\int\frac{d^3
+  p}{(2\pi)^3}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip\cdot
+  z}}{p^2-m^2}=D(x-y).\]
+</p>
+
+</div>
+
+<p>
+The integral in the lemma is often written as
+\[\Delta_F(z)=\int\frac{d^4 p}{(2\pi)^4}\frac{ie^{-ip\cdot
+z}}{p^2-m^2+i\epsilon},\]
+as the poles of this integrand are at
+\(p^0=\pm\sqrt{m^2+|\mathbf{p}|^2-i\epsilon}\), which are slightly
+above/below the real axis. We may send \(\epsilon\to 0\) and deform the
+real axis to the contour \(C\) without crossing the poles to recover the
+original integral.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>
