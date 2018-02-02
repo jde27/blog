@@ -1,0 +1,64 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: E-Learning: Spring 2013
+
+* E-Learning: Spring 2013 :elearning:teaching:
+
+[2013-06-27 Wed]
+
+Henry Wilton, Bonita Carboo and I are the UCL Maths Department's
+e-learning reps. In the interests of sharing ideas, here are a few
+things I have discovered this Spring about e-learning which may be
+useful to others.
+
+** Moodle.
+
+Moodle is the online platform UCL uses to interact with its
+students. I am only just waking up to the possibilities it offers.
+
+Most importantly for mathematicians, Moodle has LaTeX
+functionality. You may not discover it immediately, because the syntax
+is a little strange: you need to surround your LaTeX by double dollar
+signs, e.g. $$\sin(x)$$. This acts as if it were single dollar signs
+in ordinary LaTeX.
+
+I was initially unconvinced of the utility of online forums for
+students, but that changed drastically. I had a feeling that students
+wouldn’t use them, but I decided to give it a go. I was being asked
+many questions by email, many of which were duplicates, so I created a
+forum for the students to ask questions during exam term. If I was
+emailed a question, I didn’t answer it and instead strongly encouraged
+the student to ask on the Moodle forum. The result was a big uptake of
+the forum with sixteen threads involving posts from sixteen different
+students in the month leading up to the exam. This is only 10% of the
+class, but I was able to point others who asked questions by email to
+the answers I had posted on the forum, saving me time. If I had
+realised earlier how effective this would be, I would have introduced
+a forum from the outset.
+
+You can see stats on how many views your forum is getting by going to
+Navigation > Reports > Logs (thanks to Fiona Harkin for pointing this
+out). The revision forum had had 2491 views in just over a month. I
+would say this has been an extremely effective tool: while it was a
+lot of work to answer all the questions, that work counted for more.
+
+** Sage
+
+[[http://www.sagemath.org/index.html][Sage]] is an open-source computer algebra program. You can run it online
++using the Sage Notebook if you have an OpenID or+ using the [[http://aleph.sagemath.org/][Sage Cell
+Server]] which allows you to run small scripts without the bother of
+signing in. You can even embed it into webpages to create interactive
+content.
+
+One of the biggest problems my students had was getting practice
+calculating Fourier series, so I have written the bare bones of a
+short (easily extendable) interactive webpage for next year which
+should give them the practice they need. I will add more examples to
+this (if and) when I have time. If you want to see how the page works,
+you can see the Sage code embedded in the HTML by viewing the page
+source. The important things are the script tags in the document head.
+
+** E-learning development grant
+
+I am now the proud owner of an e-learning development grant to
+facilitate the filming of mathematics lectures and make them available
+online. For more information, see my [[./eldg.org][blog post here]].

@@ -1,0 +1,106 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Video-lecture project weeks 1 and 2
+
+*  Video-lecture project weeks 1 and 2 			 :elearning:teaching:
+
+[2013-10-10 Thu]
+
+
+The e-learning project for filming maths lectures is now underway
+(into its second week). You can see some of the initial results [[http://youtu.be/JQv4QlYOtNM][here]]
+and [[http://youtu.be/44pDNRMW2xM][here]]. Read on for a summary of the early teething problems we have
+experienced and some of the solutions we have found.
+
+For various reasons, weeks 1 and 2 of the project have been fraught
+with difficulties. In particular (see below) some of the recordings
+from week 1 were either fragmentary or unusable. We currently have
+usable versions of:
+
+- Methods 3: the first hour of lecture 2 and all of lecture 3
+
+- Complex analysis: the first hour of lecture 1, the first hour of
+  lecture 2 and all of lecture 3.
+
+Note that the even-numbered complex analysis lectures are interspersed
+with problem classes and we are only filming the first hour of these.
+
+However, the biggest problem to date is that Lecturecast (the UCL
+video-lecture storage facility) doesn’t seem to like big files. This
+is why none of the lectures are currently up on Lecturecast. To get
+the feedback rolling in I have decided to upload some of the Methods 3
+lectures to Youtube. For information, I got the go-ahead from UCL
+copyright to do this (under a CC-BY licence): the possible issue was
+that the UCL intellectual property policy states that UCL retains
+copyright where they have provided materials above-and-beyond the
+usual (in our case recording equipment) but I was told that this was
+not a problem so the performance rights are mine: thanks to June
+Hedges and Rod Digges for clarifying this.
+
+The Methods 3 lectures 2 (part 1) and 3 are available [[http://youtu.be/JQv4QlYOtNM][here]] and [[http://youtu.be/44pDNRMW2xM][here]].
+
+Some comments: The audio is poor, probably because I am having to
+speak loudly to a big lecture theatre (the mic is only recording, not
+broadcasting). The video starts a couple of seconds into the lecture
+(sometimes difficult to avoid). The second hour of lecture 2 was not
+captured because of lack of space on the 8GB SD card. We have now
+fixed this for future recordings.
+
+Some other basic lessons we learnt:
+
+1. Ensure that all equipment is fully charged before attempting to
+   film a two hour lecture. The camera battery doesn't actually last a
+   full two hours, but then nor does a two-hour lecture. Charging
+   between the 9-10am and 11-12am lectures on Wednesdays only just
+   recovers enough charge for the second lecture. We have now borrowed
+   a cable which allows the camera to film whilst charging from
+   e-learning and hopefully this will not be an issue again, but it
+   led to some unusably fragmented videos early in week 1.
+2. The Harrie Massey lecture theatre is badly suited for video
+   capture. For a start (like the Chemistry lecture theatre) it is
+   lacking in good power points to plug in the microphone base and we
+   have had to run an extension cable from the front to the first row
+   (posing something of a health and safety risk...) Moreover, there
+   are bulky immovable objects directly in front of the whiteboards,
+   rendering it difficult to film from the front row (where we need to
+   be for electrical reasons). Bianca sensibly suggested filming
+   slightly from one side to avoid these obstructions and this has
+   improved matters.
+3. An 8GB SD card is not enough for a two hour lecture. I have now
+   bought two 16GB SD cards for this purpose. One must also remember
+   to delete videos properly once they are downloaded: either by
+   formatting the SD card or removing them from a command line –
+   otherwise they go to a hidden trash file and take up space, which
+   led to our not being able to film most of Methods 3 Lecture 1.
+4. For uploading to Lecturecast, videos need to be encoded using h.264
+   as the video codec and aac as the audio codec. I have been
+   compressing and encoding files using the free program FFMPEG (using
+   version 1.2.2) but this is not the most user-friendly of programs
+   and it is taking a while to get the videos small enough (but high
+   enough quality) to upload to Lecturecast. Currently, the command
+   #+BEGIN_example
+     $ ffmpeg -y -i ./raw/INPUT -b:v 500000-vcodec libx264 -vsync 1 -r 25 -acodec aac -strict -2 -ab 240k OUTPUT.mp4
+   #+END_example
+   is producing decent output (an hour-long lecture taking up
+   <270MB). Sometimes the camera produces several output files, which
+   can then be concatenated with
+   #+BEGIN_example
+     $  ffmpeg -f concat -i list.txt -c copy OUTPUT.mp4
+   #+END_example
+   where list.txt is a file containing a list in the format:
+   #+BEGIN_example
+     file './OUTPUT1.mp4'
+     file './OUTPUT2.mp4'
+     etc.
+   #+END_example
+5. Because the videos are not being uploaded to Lecturecast (and
+   because I am keeping the unprocessed video-files in case I find I
+   need an entirely different compression mechanism to get to
+   Lecturecast) storage is becoming an issue. If I didn't have storage
+   space at home, I would be panicking. My UCL desktop certainly
+   doesn't have the storage capacity for even one of the unprocessed
+   files and an 8GB memory stick won't store two. I also heartily
+   recommend to anyone else running a similar project that you decide
+   on an archiving/file-labelling system long in advance and stick to
+   it religiously: the files from the camera are all called 0000n.MTS
+   for some value of n and this can lead to confusion.
+

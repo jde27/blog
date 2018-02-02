@@ -1,0 +1,198 @@
+.title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+
+
+
+
+  
+.banner{
+    width:98%;
+    margin:0;
+    padding-top:2%;
+    padding-left:2%;
+    padding-bottom:2%;
+    background-color:#CCCCCC;
+    color:white;
+    font-family:monospace;
+}
+
+li{
+    margin-top:0.4em;
+    margin-bottom:0.3em;
+}
+
+body{
+   font-family:"Arial", "Helvetica", sans-serif;
+}
+
+h1{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#000066;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+h2{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#006699;
+   margin-left:50px;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+h3{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#0099CC;
+   margin-left:100px;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+
+p{
+   padding-left:1%;
+   padding-right:1%;
+   padding-top:3px;
+   padding-bottom:3px;
+}
+
+.bottomblock{
+   font-size:80%;
+   font-weight:bold;
+   background-color:#000000;
+   text-align:right;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+.cc{
+    color:#FFFFFF;
+}
+
+.thm{
+    display:block;
+    margin-left:10px;
+    margin-bottom:20px;
+    font-style:normal;
+}
+.thm:before{
+    content:"Theorem.\00a0\00a0";
+    float:left;
+    font-weight:bold;
+}
+
+.exm{
+    display:block;
+    margin-left:10px;
+    margin-bottom:20px;
+    font-style:normal;
+}
+.exm:before{
+    content:"Example.\00a0\00a0";
+    float:left;
+    font-weight:bold;
+}
+.lma{
+    display:block;
+    margin-left:10px;
+    margin-bottom:20px;
+    font-style:normal;
+}
+.lma:before{
+    content:"Lemma.\00a0\00a0";
+    float:left;
+    font-weight:bold;
+}
+
+.proof{
+    display:block;
+    margin-left:10px;
+    margin-bottom:30px;
+    font-style:normal;
+}
+.proof:before{
+    content:'Proof.\00a0\00a0';
+    float:left;
+    font-weight:bold;
+}
+.proof:after{
+    content:"\25FC";
+    float:right;
+}

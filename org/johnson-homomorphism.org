@@ -1,0 +1,56 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Geometric definition of the Johnson homomorphism
+
+* Geometric definition of the Johnson homomorphism
+
+[2013-04-26 Fri]
+
+I have recently been thinking about Torelli groups.
+
+The Torelli group of a surface is the subgroup of mapping classes
+which act trivially on cohomology. Consider the case of an orientable
+surface with $g$ handles and one boundary component (diffeomorphisms
+are required to fix the boundary). There is a famous homomorphism from
+this group to the free abelian group of rank ${2g\choose 3}$ called
+the Johnson homomorphism. The usual definition is pretty
+algebraic-looking (involving the mapping class group action on the
+fundamental group and its commutator subgroup). This week I read an
+alternative (extremely beautiful, geometric) definition of this
+homomorphism in Johnson's survey paper on the Torelli group
+(D. Johnson, A survey of the Torelli group, Contemp. Math. (1983)
+vol. 20, 165-179). This definition is probably very well-known, but I
+didn't formerly know it and I thought it was too nice not to blog
+about.
+
+Fix a point $p$ on a genus $g$ complex curve $C$. Consider the
+Abel-Jacobi map $A\colon C\to\mathrm{Jac}(C)$ from $C$ into its
+Jacobian torus $\mathrm{Jac}(C)\cong T^{2g}$ which sends $q$ to
+$\mathcal{O}(q-p)$. Precompose this embedding with a Torelli
+diffeomorphism fixing $p$ (almost equivalent to fixing the boundary of
+the complement of a neighbourhood of $p$, except that
+boundary-parallel twists are now trivial...but the Johnson
+homomorphism would vanish on these anyway). This gives another
+embedding $A'$; $A$ and $A'$ are now homotopic because based homotopy
+classes of maps $C=K(\pi,1)\to T^{2g}=K(Z^{2g},1)$ are determined by
+the induced map on cohomology (which is the same because the
+diffeomorphism is Torelli). This homotopy traces out a 3-cycle in
+$T^{2g}$, i.e. an element of $\Lambda^3
+H_1(C;Z)\cong\mathbf{Z}^{2g\choose 3}$. This is the Johnson
+homomorphism.
+
+Alternatively, you take the universal curve over the quotient of
+Teichmueller space by Torelli (possible because automorphisms of a
+Riemann surface act nontrivially on cohomology so the universal curve
+exists as a bundle, not a stack). The corresponding universal Jacobian
+bundle is trivial (because the Jacobian is cohomological and the
+monodromies are Torelli). There is a universal Abel-Jacobi embedding
+of the universal curve into the universal Jacobian and you project
+that embedding into a single $T^{2g}$ fibre using a trivialisation of
+the universal Jacobian. Now homology classes in the quotient of
+Teichmueller space by the Torelli group (equivalently the classifying
+space of the Torelli group) pullback to classes in the universal curve
+(taking preimages) and then pushforward to classes in $T^{2g}$. The
+induced map on $H_1$ is the Johnson homomorphism (and there are higher
+maps on higher group homology of the Torelli group). You need Torelli
+diffeomorphisms fixing a point in order to talk about the relative
+Abel-Jacobi map.

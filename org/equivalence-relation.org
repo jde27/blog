@@ -1,0 +1,121 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Equivalence relations
+
+* Equivalence relations 				      :revision:mathm205:
+
+[2017-09-17 Sun]
+
+
+Equivalence relations are an important concept in mathematics, but
+sometimes they are not given the emphasis they deserve in an
+undergraduate course. Having a good grasp of equivalence relations is
+very important in the course MATHM205 (Topology and Groups) which I'm
+teaching this term, so I have written this blog post to remind you
+what you need to know about them. I will kick off with a few examples,
+then give a more formal definition.
+
+** Examples
+
+*** Clock arithmetic
+
+The simplest interesting example of an equivalence relation is
+equivalence of integers mod 2. You consider two integers to be
+/equivalent/ if they have the same parity (both even or both odd),
+otherwise you consider them to be inequivalent. You end up with two
+/equivalence classes/ of integers: the odd and the even integers. You
+can do arithmetic/algebra just as well with these equivalence classes
+as you could with the integers themselves: even + even = even, odd +
+even = odd, odd + odd = even etc.
+
+More generally, given a number $n$ you can consider equivalence of
+integers modulo $n$: we write $x\sim_n y$ if and only if $n$ divides
+$y-x$. We now have $n$ equivalence classes according to the remainder
+you get when you divide by $n$.
+
+*** Cut-and-paste
+
+Let's take a different example, this time from topology. One way to
+think about a particle living on the 2-dimensional torus is as
+follows. You let the particle move around on the unit square in the
+$(x,y)$-plane. Every time it falls off the right-hand side, you pick
+it up and put it onto the left-hand side at the same $y$-coordinate
+(and vice versa). Every time it falls off the top, you pick it up and
+put it onto the bottom at the same $x$-coordinate. In other words, we
+want to consider the points $(x,0)$ and $(x,1)$ to be *the same* point
+on the torus, and we want to consider the points $(0,y)$ and $(1,y)$
+to be *the same* point on the torus. To formalise this, we introduce
+an equivalence relation on the set of points in the square for which
+$(x,0)\sim (x,1)$ and $(0,y)\sim (1,y)$ and we consider the torus to
+be the set of equivalence classes of points in the square modulo this
+equivalence relation. This proves to be a very useful way of
+constructing spaces (and we will see in the course how to equip the
+set of equivalence classes with a topology).
+
+** Formalities
+
+More formally, an equivalence relation on $X$ is a subset
+$\sim\subset X\times X$ with the following properties:
+
+- $(x,y)\in\sim$ implies $(x,y)\in\sim$;
+- $(x,x)\in\sim$ for all $x\in X$;
+- $(x,y)\in\sim$ and $(y,z)\in\sim$ implies $(x,z)\in\sim$.
+
+This becomes less mysterious if we write $x\sim y$ instead of
+$(x,y)\in\sim$. Then we see that an equivalence relation is a
+criterion for two points in $X$ to be identified as ``equivalent'', in
+such a way that this equivalence is symmetric in $x$ and $y$,
+reflexive (in the sense that $x$ is equivalent to itself) and
+transitive (so that if $x$ is equivalent to $y$ and $y$ is equivalent
+to $z$ then $x$ is also equivalent to $z$).
+
+Given a point $x\in X$, the equivalence class of $x$ modulo $\sim$ is
+the subset
+\[[x]=\{y\in X\ :\ x\sim y\}.\]
+The quotient $X/\sim$ is defined to be the set of equivalence classes
+modulo $\sim$.
+
+** Examples revisited
+
+Let us revisit the earlier examples, along with some new ones:
+
+- Equality of integers is an equivalence relation on $\mathbf{Z}$: it is
+  given by the ``diagonal'' subset
+  \[\{(x,x)\ :\ x\in \mathbf{Z}\}\subset \mathbf{Z}\times \mathbf{Z}.\]
+- Equality of integers mod $p$ is also an equivalence relation on
+  $\mathbf{Z}$: it is given by the subset
+  \[\sim_p=\{(x,y)\in\mathbf{Z}\times\mathbf{Z}\ :\ p|(x-y)\}
+  \subset\mathbf{Z}\times\mathbf{Z}.\]
+- Congruence is an equivalence relation on the collection of triangles
+  in the plane with $\sim$ being the set of pairs $(T_1,T_2)$ of
+  triangles such that $T_1$ is congruent to $T_2$.
+- The equivalence relation which allows us to turn a square into a
+  torus is: \[\left\{((x,y),(x',y'))\in X\times
+  X\ :\mbox{ one of
+  }\begin{array}{1}x=x',y=y'\\ x=x',y=0,y'=1\\ x=x',y=1,y'=0\\ y=y',x=0,x'=1\\ y=y',x=1,x'=0. \end{array}\mbox{
+  holds.}\right\}\]
+- If $G$ is a group and $H\subset G$ is a subgroup then the set $G/H$
+  of cosets of $H$ in $G$ is the set of equivalence classes of $G$
+  modulo the equivalent relation
+  \[x\sim y\Leftrightarrow x=yh\mbox{ for some }h\in H.\]
+
+** Subtleties
+
+We use this final example of quotienting a group by a subgroup to
+illustrate some of the subtleties with equivalence relations.
+
+It's always easy to form the quotient $X/\sim$ as a *set*, but usually
+we have some structure (a group law, topology, or something) on $X$
+and we want $X/\sim$ to inherit the same kind of structure.
+
+When we quotient out by a subgroup, we usually don't have a canonical
+way to write down a group structure on the quotient. If we try the
+most naive thing and define the product on cosets by:
+\[[g_1][g_2]=[g_1g_2]\] then we run in to the following
+problem. Suppose we pick different representatives $g_1$ and $g'_1$ of
+the same equivalence class. Then $g_1=g_1'h$ for some $h\in H$. Now
+there is no guarantee that $g_1g_2$ and $g'_1g_2=g_1hg_2$ represent
+the same coset, which they would need to if the product we wrote down
+above were to be well-defined. Indeed, this only reliably works if $H$
+is a /normal subgroup/, that is $ghg^{-1}\in H$ for all $h\in H$ and
+$g\in G$, because then \[g_1hg_2=g_1g_2h'\] for some $h'\in H$, so
+$g'_1g_2$ and $g_1g_2$ define the same coset of $H$.

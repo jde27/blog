@@ -1,0 +1,88 @@
+ul{
+    list-style:none;
+}
+
+li{
+    margin-top:0.4em;
+    margin-bottom:0.3em;
+}
+
+body{
+   font-family:"Arial", "Helvetica", sans-serif;
+}
+
+h1{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#000066;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+h2{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#006699;
+   margin-left:50px;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+h3{
+   font-size:130%;
+   font-weight:bold;
+   background-color:#0099CC;
+   margin-left:100px;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+
+p{
+   padding-left:1%;
+   padding-right:1%;
+   padding-top:3px;
+   padding-bottom:3px;
+}
+
+.bottomblock{
+   font-size:80%;
+   font-weight:bold;
+   background-color:#006699;
+   color:#FFFFFF;
+   padding:1%;
+}
+
+.cc{
+    background-color:#FFFFFF;
+}
+
+.thm{
+    display:block;
+    margin-left:10px;
+    margin-bottom:20px;
+    font-style:normal;
+}
+.thm:before{
+    content:"Theorem.\00a0\00a0";
+    float:left;
+    font-weight:bold;
+    font-size:104%
+}
+
+.proof{
+    display:block;
+    margin-left:10px;
+    margin-bottom:30px;
+    font-style:normal;
+}
+.proof:before{
+    content:'Proof.\00a0\00a0';
+    float:left;
+    font-weight:bold;
+    font-size:104%;
+}
+.proof:after{
+    content:"\25FC";
+    float:right;
+}

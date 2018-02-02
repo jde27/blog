@@ -1,0 +1,63 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: TikZ and org-mode
+
+* TikZ and org-mode
+
+[2017-11-25 Sat]
+
+TikZ is a very versatile extension to LaTeX which allows you to
+produce nice images. Recently, whilst writing algebraic topology
+lecture notes, I have become a TikZ-addict and wanted to include a
+TikZ-generated diagram into a blog post I was writing in
+org-mode. After some messing around, and looking [[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-LaTeX.html][here]], I figured out
+what to do. I wrapped my TikZ code in the following org-commands
+
+#+BEGIN_Example
+  #+HEADER: :file ../img/contour.svg :imagemagick yes
+  #+HEADER: :results output silent :headers '("\\usepackage{tikz}")
+  #+HEADER: :fit yes :imoutoptions -geometry 400 :iminoptions -density 600
+  #+BEGIN_src latex
+  \begin{tikzpicture}
+  \draw[->] (-3,0) -- (-2,0) arc[radius=0.5cm,start angle=-180,end angle=0] (-1,0) -- (1,0) arc[radius=0.5cm,start angle=180,end angle=0] (2,0) -- (3,0);
+  \filldraw (-1.5,0) circle[radius=1mm];
+  \filldraw (1.5,0) circle[radius=1mm];
+  \end{tikzpicture}
+  #+END_src
+#+END_Example
+
+When I move the cursor in org-mode onto this src-block and type C-c
+C-c, it runs the tikz command and generates an SVG file with my
+diagram in it. Now I add the line...
+
+#+BEGIN_Example
+  [[../img/contour.svg]]
+#+END_Example
+
+...and org-mode inserts the picture into my blog-post.
+
+The mysterious headers achieve the following:
+
+#+BEGIN_Example
+  #+HEADER: :file ../img/contour.svg :imagemagick yes
+#+END_Example
+
+This tells org mode where to create the image file and how to do it
+(i.e. to generate PDF from Tikz and then convert it to SVG using
+imagemagick).
+
+#+BEGIN_Example
+  #+HEADER: :results output silent :headers '("\\usepackage{tikz}")
+#+END_Example
+
+This tells org mode not to include the results of running this code
+block into the blog post (it wrapped them in a LaTeX block which
+wasn't exporting to HTML).
+
+#+BEGIN_Example
+  #+HEADER: :fit yes :imoutoptions -geometry 400 :iminoptions -density 600
+#+END_Example
+
+This tells org mode how big and clear to make the image. Of course,
+ideally the SVG would be generated directly and simply from TikZ
+(rather than going through PDF and imagemagick), but I'm not sure how
+to do that. (Any suggestions?)

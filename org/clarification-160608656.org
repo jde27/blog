@@ -1,0 +1,59 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Clarification for arXiv:1606.08656
+
+* Clarification for arXiv:1606.08656
+
+[2018-01-31 Wed]
+
+The paper Ivan Smith and I wrote on Lagrangian pinwheels in
+$\mathbf{CP}^2$ and Markov numbers has recently appeared in /Geometry
+and Topology/. Shortly thereafter, Yong-Geun Oh contacted us with some
+excellent questions where our exposition was less than clear. In case
+anyone else has the same questions, I thought I would write a blog post
+clarifying these points.
+
+- Lemma 2.16(c) should say $T=\mathbb{Z}/(m)$ rather than
+  $\mathbb{Z}/(\Delta/m)$.
+- There is a discrepancy between what we write in Section 2.3:
+  + ``The generic orbit is homologous to $p^2e/g$.'' (correct)
+  and what we write in the final paragraph of Remark 3.15:
+  + ``the generic Reeb orbits are homologically trivial in
+    $\Sigma_{p,q}$'' (not true in general)
+  Indeed, since $H_1(\Sigma_{p,q};\mathbb{Z})=\mathbb{Z}/(p^2)$, this
+  only holds when $g=1$, which happens if and only if $p$ is odd (see
+  Remark 2.12).
+
+This is important, because Remark 3.15 is used to justify why certain
+holomorphic curves asymptote to nongeneric Reeb orbits. As stated, the
+argument we give there holds only for odd $p$.
+
+I will now explain the two situations in which we needed this fact and
+how it generalises to arbitrary values of $p$. In the case when $p$ is
+odd (and $g=1$), this reduces to what we wrote.
+
+1. In Theorem 4.16, we have a holomorphic cylinder which we have
+   extracted from an SFT neck-stretching argument. One of its ends is
+   asymptotic to a Reeb orbit on a component of the boundary called
+   $\Sigma_{p_2,q_2}$ (a contact lens space). We have already
+   established that the Reeb orbits fall into two categories:
+   ``exceptional'' and ``generic'' (the Reeb orbits give a Seifert
+   fibration of the lens space). *We want to show that this asymptote
+   is to an exceptional orbit.*
+   
+   The homology class of the generic orbit is $p^2/g$ times the class
+   of the exceptional orbit. The relative homology class of the
+   cylinder is (in notation from the paper) $D\mathcal{E}$ and the
+   connecting homomorphism to
+   $H_1(\Sigma_{p_2,q_2};\mathbf{Z})=\mathbf{Z}/(p_2^2)$ is to reduce
+   $D$ modulo $p_2^2$. We know that $D\leq p_2/3$ by Lemma 4.11(B). If
+   the asymptote were generic then $D$ would reduce modulo $p_2^2$ to
+   something divisible by $p_2^2/g$ (where $g$ is $1$, $2$ or $4$,
+   depending on $p_2$ by Remark 2.12). But then we get $p_2^2/g\leq
+   p_2/3$, which implies $p_2\leq g/3\leq 4/3$ so we don't need to
+   worry about this case as $p_2$ is at least $2$.
+
+2. In the other situation, if the SFT limit is a plane (the case
+   $|Z|=1$ in the paper) and the asymptote is generic then the
+   homology class of the plane is, again, divisible by $p^2/g$ and
+   this contradicts the inequality $D\leq 2p/3$ from Lemma 4.8.
+

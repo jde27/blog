@@ -1,0 +1,184 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Symplectic/Contact Geometry VII at Les Diablerets, Day 1
+
+* Symplectic/Contact Geometry VII at Les Diablerets, Day 1
+
+[2013-01-11 Fri]
+
+I'm currently in Switzerland at the seventh [[http://members.unine.ch/felix.schlenk/CASTmeeting/index.html]["Symplectic Geometry,
+Contact Geometry and Interactions"]] Workshop funded by [[http://cast.ulb.ac.be/][CAST]]. This is a
+yearly conference which started at the same time I started my PhD so I
+have a great fondness for these workshops. This one is in the
+mountains, which makes me even fonder...
+
+[[../img/mountain.jpg]]
+
+After three excellent talks today I decided to act as a "maths journalist" and summarise the main ideas from the talks in this blog. I may not be able to keep this up, as there's six talks tomorrow and too much snow to enjoy. Today's talks were:
+
+- Urs Frauenfelder "A $\Gamma$-structure on the Lagrangian Grassmannian"
+- Yochay Jerby "The symplectic topology of projective manifolds with
+  small dual"
+- Alex Ritter "Floer theory for negative line bundles"
+
+** Urs Frauenfelder: A \Gamma-structure on the Lagrangian Grassmannian.
+
+/(Joint with Peter Albers)/ See [[http://arxiv.org/abs/1209.4505][arXiv:1209.4505]].
+
+This was a great way to start the conference – an elementary talk
+about the topology of one of our favourite spaces, the Lagrangian
+Grassmannian. Of course, its cohomology has been known for a long time
+(it's a homogeneous space $U(n)/O(n)$ and there are spectral sequence
+techniques for computing such cohomology groups, see for example
+Toda-Mimura's books on the topology of Lie groups) – in the case when
+$n$ is odd the rational cohomology is an exterior algebra on odd
+-degree generators. But the beauty of this talk was a simple geometric
+explanation of why we should get an exterior algebra on odd
+generators!
+
+The key definition of a $\Gamma$-structure is due to Hopf (1941). It
+generalises that of a Lie group multiplication $m\colon G\times G\to
+G$. The essential topological fact about Lie group multipication maps
+is that restricting to $\{g\}\times G$ or $G\times\{g\}$ (i.e. left- or
+right-multiplication by $g$) gives you degree 1 maps $L_g,R_g\colon
+G\to G$. Hopf defined a $\Gamma$-structure on an oriented, connected
+manifold $M$ to be a map $\Theta\colon M\times M\to M$ such that the
+restrictions $_m\Theta:=\Theta|_{\{m\}\times M}\colon M\to M$ and
+$\Theta_m:=\Theta|_{M\times\{m\}}\colon M\to M$ both have nonzero
+degree.
+
+This structure gives us (via pullback) a coproduct $\Delta\colon
+H^*(M;\mathbf{Q})\otimes H^*(M;\mathbf{Q})\to H^*(M;\mathbf{Q})$ on
+the cohomology. This is enough to constrain the cohomology ring to
+being an exterior algebra on odd-dimensional generators (an amazing
+fact due to Hopf).
+
+The $\Gamma$-structure on the Lagrangian Grassmannian is most evident
+when you identify a Lagrangian subspace with the unique orthogonal
+antisymplectic involution having it as fixed locus. Given two such
+involutions $R,S$ you can form the "product" $RSR$ and this is the
+$\Gamma$-structure (with degrees $-1$ and $2^{\frac{n-1}{2}}$). Urs
+explained this carefully and clearly and I found it particularly
+helpful to contemplate the instructive example $n=1$ (when the
+Lagrangian Grassmannian is $\mathbf{RP}^1$).
+
+** Yochay Jerby: The symplectic topology of projective varieties with small dual.
+
+/(Joint with Paul Biran)/ See [[http://arxiv.org/abs/1107.0174][arXiv:1107.0174]].
+
+It always pleases me when someone proves a result in algebraic
+geometry using symplectic techniques. This talk is a beautiful
+example. The dual of projective space is the space of hyperplanes in
+projective space (which is isomorphic to projective space). The dual
+of a subvariety is the variety of hyperplanes containing the tangent
+spaces of the subvariety. This is generically a hypersurface, but in
+certain special cases it has higher codimension. For example, the dual
+of a hyperplane is a point! These are called varieties with small dual
+and Yochay was talking about smooth varieties $X$ with small dual.
+
+These have been much studied by algebraic geometers and turn out to be
+very special (for instance there are strong restrictions on their
+topology, including a 2-periodicity of the cohomology in some range of
+degrees). From a symplectic viewpoint they turn out to be special too:
+Biran and Jerby take a hyperplane section $\Sigma$ and prove that the
+cohomology class of the Fubini-Study form is invertible, considered as
+an element of quantum cohomology of $\Sigma$. They do this by showing
+that it arises as the Seidel element of a loop in the Hamiltonian
+group. Loops in the Hamiltonian group can be used as clutching
+functions to describe Hamiltonian fibrations over the sphere, and the
+Hamiltonian fibration in this case comes very naturally from the
+projective geometry: you take a line in the dual projective space
+which is disjoint from the dual variety of $X$ (possible precisely
+because $X$ has small dual!) and use these hyperplanes to cut out a
+family of smooth hyperplane sections $\Sigma$ parametrised by this
+line. The Seidel element associated to this fibration is then an
+invertible element in quantum cohomology defined using some moduli
+spaces of sections of the fibration and the main theorem is to compute
+this and show it is indeed the cohomology class of the symplectic
+form.
+
+Having an invertible element in degree two means that the quantum
+cohomology is 2-periodic, but it is also graded by the minimal Chern
+number and using these two facts allows you to recover a refinement of
+the classical 2-periodicity theorem of the cohomology of varieties
+with small dual. Not only is the cohomology 2-periodic in some range
+but outside that range there is a periodicity of the quantum
+cohomology which translates into a periodicity of sums of Betti
+numbers which was not known (I think) via purely algebro-geometric
+techniques.
+
+** Alex Ritter: Floer theory for negative line bundles.
+
+/(Partly joint work with Ivan Smith)/ See [[http://arxiv.org/abs/1106.3975][arXiv:1106.3975]] and [[http://arxiv.org/abs/1201.5880][arXiv:1201.5880]].
+
+Faced with the monumental task of introducing (wrapped and unwrapped)
+Floer homology, symplectic homology and Fukaya categories as well as
+telling us about his theorem (all in the final hour before dinner),
+Alex rose to the challenge with a beautiful set of highly illustrated
+beamer slides.
+
+The spaces Alex was talking about are the total spaces of line bundles
+over symplectic manifolds (mostly $\mathbf{CP}^n$) such that the first
+Chern class is a negative multiple of the cohomology class of the
+symplectic form. For instance, $\mathcal{O}(-1)$ over
+$\mathbf{CP}^1$. These are noncompact symplectic manifolds with
+symplectic fibres and symplectic base and they are convex in the sense
+that a sequence of holomorphic curves cannot escape to infinity. The
+first theorem he proved was that the symplectic homology of such a
+space is a quotient of the quantum homology (symplectic homology is a
+Floer theory counting periodic orbits of a Hamiltonian which gets very
+big quite quickly in the noncompact end of the manifold, quantum
+homology just counts compact holomorphic spheres!). In particular you
+quotient by the kernel of a certain map: the quantum cup product with
+a high power of the first Chern class. When there are no spheres with
+positive symplectic area in the base (and hence in the total space)
+the quantum and classical cup products agree and hence a sufficiently
+large power of the first Chern class vanishes, to the whole quantum
+cohomology is in its kernel, which recovers an older result of Oancea
+(that assuming there are no spheres with positive symplectic area the
+symplectic homology vanishes). The idea of the proof was the
+following: symplectic homology is defined as a limit of Floer
+homologies for a sequence of Hamitonians. For a suitable choice of
+these Hamiltonians you can ensure that each of these Floer homologies
+is isomorphic to quantum cohomology (roughly speaking you rotate the
+fibre in such a way as to ensure that all closed orbits lie in the
+zero section) and the maps in the sequence are precisely
+multiplications by the first Chern class.
+
+Not satisfied with this, Alex raised the stakes algebraically and
+introduced the "open-closed string map" (one of the more complicated,
+though increasingly central, aspects of the Fukaya/Floer story). This
+is a map from the Hochschild cohomology of the Fukaya category to the
+quantum homology. I think (hope) I'm right in saying the
+following. For a single Lagrangian $L$ it takes a collection of cycles
+("inputs" – the Hochschild cohomology having as its $n$th chain group
+the tensor product of $n$ copies of the Floer chain group of $L$) to
+an ambient cycle. The ambient cycle is traced out by a marked point on
+a holomorphic disc with as many marked points as there are inputs
+where each point point is required to be mapped to the corresponding
+cycle. Mad. And then he raised the stakes yet more by introducing the
+analogous map from the wrapped Fukaya category to the symplectic
+homology.
+
+Why? Well Abouzaid recently proved a criterion for when a Lagrangian
+(or collection of Lagrangians) split-generates the Fukaya category (or
+some part of it) by looking at the image of this open-closed string
+map. Ritter and Smith have adapted this to the monotone setting they
+need for these negative line bundles. Using this criterion (namely
+that the image should contain some invertible element) they prove that
+you only need a single Lagrangian to split-generate the wrapped Fukaya
+category of a negative line bundle over $\mathbf{CP}^n$ (for suitably
+low Chern class of the line bundle). The Lagrangian in question is the
+circle bundle living over the Clifford torus (which, when taken with
+various flat connections, generates all the various parts of the
+Fukaya category). In particular, the wrapped category is generated by
+a compact Lagrangian, so this proves that all the potential
+infinite-dimensionality introduced by wrapped Floer cohomology is
+actually only finite-dimensional (in the same way that the symplectic
+cohomology reduced to a quotient of quantum cohomology).
+
+At this point, Alex brought the discussion back down to earth by
+discussing the equator in the sphere (one of the most instructive
+Lagrangian submanifolds, well worth your contemplation). Then we went
+for tea.
+
+

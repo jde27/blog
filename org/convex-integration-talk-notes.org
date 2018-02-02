@@ -1,0 +1,20 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Convex integration (talk notes)
+
+* Convex integration (talk notes)
+
+[2013-02-15 Wed]
+
+In case you were unable to take notes from my talk (either because you
+were unable to attend or because you were present) I've written them
+up below in some detail. They're basically just a summary of
+Borrelli's notes.
+
+Also relevant is the preliminary [[./convex-integration-cartoon.org][cartoon]] which contains many of the
+essential ideas.
+
+*Warning:* Images are large may take some time to load.
+
+[[../img/convex-integration.jpg]]
+
+[[../img/key-lemma.jpg]]

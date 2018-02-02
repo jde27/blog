@@ -1,0 +1,164 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Pre-QFT 1. Quantum harmonic oscillator
+
+* Pre-QFT 1: The quantum harmonic oscillator 			:qft:quantum:
+
+[2017-09-24 Sun]
+
+This is a standard piece of theory in quantum mechanics, and it is
+crucial for understanding QFT. I am including it here so I can look it
+up whenever I need it.
+
+The classical system called the simple harmonic oscillator involves a
+particle in a 1-dimensional space (coordinate $q$) moving under the
+influence of a potential which is quadratic in $q$. We'll write $p$
+for the momentum of the particle along the $q$-axis. In suitable units
+(to make the constants as simple as possible) the Hamiltonian
+for the system is
+\[H=\frac{1}{2}p^2+\omega^2q^2,\]
+where $\omega$ is a constant. When we quantise this system, it makes
+life slightly easier if we rewrite this Hamiltonian as
+\[H=\omega\frac{1}{\sqrt{2\omega}}\left(\omega q-ip\right)
+\frac{1}{\sqrt{2\omega}}\left(\omega q+ip\right).\]
+We apply canonical quantisation to this system:
+- taking as our Hilbert space of states the space of square-integrable
+  functions in $q$;
+- replacing $q$ with the operator $\hat{q}$:
+  \[\hat{q}(\psi(q))=q\psi(q);\]
+- replacing $p$ with the operator $\hat{p}$:
+  \[\hat{p}(\psi)=-i\partial_q\psi.\]
+Note that these operators satisfy
+\begin{align*}
+[\hat{q},\hat{p}]\psi&=-iq\partial_q\psi+i\partial_q(q\psi)\\
+&=-iq\partial_q\psi+iq\partial_q\psi+i\psi,
+\end{align*}
+that is, $[\hat{q},\hat{p}]=i$. This is called the /canonical
+commutation relation/.
+
+The Hamiltonian becomes
+\[\hat{H}=\omega a^\dagger a,\]
+where
+\begin{align*}
+a&=\frac{1}{\sqrt{2\omega}}(\omega\hat{q}+i\hat{p})\\
+a^\dagger&=\frac{1}{\sqrt{2\omega}}(\omega\hat{q}-i\hat{p})\\
+\end{align*}
+(here the dagger denotes Hermitian conjugation). Equivalently,
+\begin{align*}
+\hat{q}&=\frac{1}{\sqrt{2\omega}}\left(a+a^\dagger\right)\\
+\hat{p}&=-i\sqrt{\frac{\omega}{2}}\left(a-a^\dagger\right).
+\end{align*}
+
+#+BEGIN_Remark
+
+Note that /before/ we
+quantise, the ordering of $q$ and $p$ is not important, so we have to
+make choice about how we order them when we quantise. Different
+choices will give different Hamiltonians (differing by a constant,
+which emerges from the canonical commutation relation as the qs and
+ps move past one another). The choice we made here is called /normal
+ordering/, where we have written the Hamiltonian as an expression in
+$a$ and $a^\dagger$, and taken all the $a^\dagger$ terms to the
+left. Later, in QFT, we will have an infinite number of simple
+harmonic oscillators to handle at the same time, and the extra
+constants that would appear from a different choice of ordering would
+give rise to an annoying infinite quantity.
+
+#+END_Remark
+
+The operators $a$ and $a^\dagger$ satisfy the following commutation
+relations:
+\begin{align*}
+\left[a,a^\dagger\right]
+&=\frac{1}{2\omega}[\omega\hat{q}+i\hat{p},\omega\hat{q}-i\hat{p}]\\
+&=-i[\hat{q},\hat{p}]\\
+&=1.
+\end{align*}
+Moreover, they satisfy the following commutation relations with the
+Hamiltonian $\hat{H}$:
+\begin{align*}
+[\hat{H},a]
+&=\omega a^\dagger a^2-\omega aa^\dagger a\\
+&=\omega[a^\dagger,a]a\\
+&=-\omega a,
+\end{align*}
+\begin{align*}
+[\hat{H},a^\dagger]
+&=\omega a^\dagger aa^\dagger-\omega \left(a^\dagger\right)^2a\\
+&=\omega a^\dagger[a,a^\dagger]\\
+&=\omega a^\dagger.
+\end{align*}
+There is a state $|0\rangle$ called the /vacuum state/ which satisfies
+\[a|0\rangle=0,\quad\langle 0|0\rangle=1.\]
+This is an eigenstate of the quantised Hamiltonian with eigenvalue zero:
+\[\hat{H}|0\rangle=\omega a^\dagger a|0\rangle=0.\]
+
+#+BEGIN_Remark
+
+Explicitly, in our chosen Hilbert space $L^2(\mathbf{R})$, this is the unique
+(normalised) solution to the differential equation $a\psi=0$, that is
+\[\partial_q\psi=-\omega q\psi.\] This solution is $\psi=Ce^{-\omega
+q^2/2}$, where $C$ is a suitably chosen normalisation factor.
+
+#+END_Remark
+
+We can act on this state using $\left(a^\dagger\right)^n$ to generate
+further states
+\[|n\rangle=\left(a^\dagger\right)^n|0\rangle,\]
+These are also eigenstates of $\hat{H}$; using the commutation
+relation $[a,a^\dagger]=1$ and the fact that $a|0\rangle=0$, we get
+\begin{align*}
+\hat{H}|n\rangle
+&=\omega a^\dagger a \left(a^\dagger\right)^n|0\rangle\\
+&=\omega \left(a^\dagger\right)^n|0\rangle
++\omega \left(a^\dagger\right)^2a\left(a^\dagger\right)^{n-1}|0\rangle\\
+&=2\omega \left(a^\dagger\right)^n|0\rangle
++\omega \left(a^\dagger\right)^3a\left(a^\dagger\right)^{n-2}|0\rangle\\
+&=\cdots\\
+&=n\omega|n\rangle.
+\end{align*}
+The norms of these states can be computed recursively as follows:
+\begin{align*}
+\langle n|n\rangle
+&=\langle 0|a^n\left(a^\dagger\right)^n|0\rangle\\
+&=\langle n-1|n-1\rangle
++\langle 0|a^{n-1}a^\dagger a\left(a^{\dagger}\right)^{n-1}|0\rangle\\
+&=\cdots\\
+&=n\langle n-1|n-1\rangle\\
+&=n!.
+\end{align*}
+so normalised eigenstates are
+$\frac{1}{\sqrt{n!}}\left(a^\dagger\right)^n|0\rangle$.
+
+#+BEGIN_Remark
+
+We can find explicit wavefunctions in our Hilbert space which
+represent these eigenstates by applying $\left(a^\dagger\right)^n$
+(considered as the differential operator
+$\frac{1}{2\omega}\left(\omega\hat{q}-i\hat{p}\right)$) to the Gaussian
+vacuum state $\psi=Ce^{-\omega q^2/2}$. For example:
+\begin{align*}
+|1\rangle
+&=a^\dagger|0\rangle\\
+&=\frac{1}{2\omega}\left(\omega q+\partial_q\right)\psi\\
+&=\frac{1}{2\omega}\left(\omega Cqe^{-\omega q^2/2}+C\omega q e^{-\omega q^2/2}\right)\\
+&=Cqe^{-\omega q^2/2}.
+\end{align*}
+In general, these states are of the form $P_n(q)e^{-\omega q^2/2}$
+where $P_n(q)$ is the Hermite polynomial of degree $n$. These
+functions form an orthonormal basis for $L^2(\mathbf{R})$, so we have
+completely solved the quantum mechanical problem of finding the
+spectrum of the quantum Hamiltonian.
+
+#+END_Remark
+
+Classically, this system arises from something like a ball on a spring
+obeying Hooke's law and ignoring friction: the ball, released, will
+oscillate along the $q$ axis with frequency $\omega$. There is a
+continuum of states depending on how much we stretch the spring before
+we release the ball (the more we stretch it, the larger the potential
+energy stored in the system, so the higher the energy of the
+state). Quantum mechanically, we see a discrete collection of states
+with energies being nonnegative integer multiples of $\omega$. In
+quantum field theory, the thing which is oscillating will be (roughly
+speaking) the value of the (Fourier transform of the) field at a
+point. [[./what-is-qft.org][See my introductory post on QFT for more about this]].

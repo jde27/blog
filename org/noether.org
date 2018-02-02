@@ -1,0 +1,206 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Noether's theorem in field theory
+#+AUTHOR: Jonny Evans
+
+* Noether's theorem in field theory
+
+[2017-11-24 Fri]
+
+** Energy and momentum in scalar field theory
+
+Let $\mathcal{F}$ denote the space of fields
+$\phi\colon\mathbf{R}^n\to\mathbf{R}$. The phase space for the classical theory of
+scalar fields is the cotangent bundle $T^*\mathcal{F}$. Since
+$\mathcal{F}$ is just a vector space whose elements are field
+configurations $\phi$, its cotangent fibre is also a vector space of
+functions $\pi$ (technically, this should probably be a space of
+distributions, as it's the dual of $\mathcal{F}$; we will ignore this
+issue). If $A$ is a vector on $T^*\mathcal{F}$ then it has a
+component $A_\phi$ in the $\mathcal{F}$-directions and a component
+$A_\pi$ in the cotangent directions. We can think of $A_\phi$ and
+$A_\pi$ as functions. The symplectic structure $\Omega$ on
+$T^*\mathcal{F}$ is given by
+\[\Omega(A,B)=\int d^nx(A_\phi(x)B_\pi(x)-A_\pi(x)B_\phi(x)).\]
+Given a function $H\colon T^*\mathcal{F}\to\mathbf{R}$, we can write down a
+corresponding Hamiltonian vector field $A$; if $\delta H(B)$ denotes the
+directional (functional) derivative of $H$ in the $B$-direction then
+$A$ is defined by Hamilton's equations
+\[\Omega(A,B)=-\delta H(B),\]
+in other words
+\[\delta H(B_\phi)=\int d^nx A_\pi B_\phi,\quad\delta H(B_\pi)=-\int
+d^nx A_\phi B_\pi.\]
+
+#+BEGIN_exm
+  Consider the function $P_i(\phi,\pi)=\int
+  d^nx\pi(x)\partial_i\phi(x)$. We have \[\delta P_i(B)=\int
+  d^nx(B_\pi(x)\partial_i\phi(x)+\pi(x)\partial_i(B_\phi(x))),\] so
+  the Hamiltonian vector field has components
+  $A_\phi(x)=\partial_i\phi(x)$ and $A_\pi(x)=\partial_i\pi(x)$. We
+  can integrate this Hamiltonian vector field to find a Hamiltonian
+  $\mathbf{R}$-action on $T^*\mathcal{F}$. Indeed, consider the $\mathbf{R}$-action
+  on $\mathcal{F}$ given by sending a function $\phi$ to
+  $\phi_t(x)=\phi(x+te_i)$ (where $e_i$ is the $i^{th}$ basis vector in
+  $\mathbf{R}^n$). To first order, this action is
+  \[\phi_t(x)=\phi(x)+t\partial_i\phi(x)+\mathcal{O}(t^2),\] so the
+  vector field generating this action is $\partial_i\phi$. A group
+  action on $\mathcal{F}$ induces a canonical group action on
+  $T^*\mathcal{F}$ by symplectomorphisms and the corresponding vector
+  field on $T^*\mathcal{F}$ is $(\partial_i\phi,\partial_i\pi)$, which
+  is precisely the Hamiltonian vector field $A$ associated to
+  $P_i$. In other words, $P_i$ is the /momentum/ associated to the
+  $\mathbf{R}$-action which changes functions (fields) by translating their
+  argument in the $e_i$-direction.
+#+END_exm
+
+#+BEGIN_exm
+  Consider the function $H(\phi,\pi)=\frac{1}{2}\int
+  d^nx(\pi^2+|\nabla\phi|^2+m^2\phi^2)$. We have
+  \begin{align*}
+    \delta H(B)&=\int d^nx(\pi B_pi+\nabla\phi\cdot \nabla B_\phi+m^2\phi B_\phi)\\
+    &=\int d^nx(\pi B_\pi+(m^2\phi-\nabla^2\phi)B_\phi),
+  \end{align*}
+  so the Hamiltonian vector field $A=(A_\phi,A_\pi)$ is
+  $(\pi,\nabla^2\phi-m^2\phi)$. The flow of this vector field is
+  given by $(\phi(t,x),\pi(t,x))$ satisfying
+  \[\dot{\phi}=\pi,\qquad\ddot{\phi}=\dot{\pi}=\nabla^2\phi-m^2\phi,\]
+  in other words, by a solution of the Klein-Gordon equation
+  \[\ddot{\phi}-\nabla^2\phi=-m^2\phi.\]
+#+END_exm
+
+** Internal symmetries
+
+Consider a free complex scalar field
+$\psi=\frac{1}{\sqrt{2}}(\phi_1+i\phi_2)$. The Hamiltonian which
+describes the time evolution of this system is \[H=\int
+d^nx\left(|\pi|^2+\nabla\psi^*\cdot\nabla\psi+m^2|\psi|^2\right).\]
+Writing this out in terms of $\phi_1$ and $\phi_2$ we get the
+Hamiltonan for two free Klein-Gordon fields with mass $m$:
+\[H=\sum_{k=1}^2\frac{1}{2}\int
+d^nx\left(\pi_k^2+|\nabla\phi_k|^2+m^2\phi_k^2\right).\]
+Here, $\pi_1$ and $\pi_2$ are the conjugate momenta to $\phi_1$ and
+$\phi_2$. One slightly confusing aspect of this is that
+$\pi=\frac{1}{\sqrt{2}}(\pi_1-i\pi_2)$.
+
+Consider the circle action on the space of fields where
+$e^{i\alpha}\in U(1)$ acts on $\psi$ to produce $e^{i\alpha}\psi$;
+equivalently, $e^{i\alpha}$ acts on $(\phi_1,\phi_2)$ to produce
+$(\phi_1\cos\alpha-\phi_2\sin\alpha,
+\phi_1\sin\alpha+\phi_2\cos\alpha)$. This action induces an action by
+symplectomorphisms on $T^*\mathcal{F}$:
+\[\left(\begin{array}{c}\phi_1 \\ \phi_2 \\ \pi_1 \\\pi_2\end{array}\right) \stackrel{e^{i\alpha}}{\to}
+\left(\begin{array}{c}\phi_1\cos\alpha-\phi_2\sin\alpha
+\\ \pi_1\sin\alpha+\pi_2\cos\alpha \\ \pi_1\cos\alpha-\pi_2\sin\alpha
+\\ \pi_1\sin\alpha+\pi_2\cos\alpha\end{array}\right).\]
+The infinitesimal action (i.e. the vector field on $T^*\mathcal{F}$
+generating this action) is \[V=(-\phi_2,\phi_1,-\pi_2,\pi_1).\]
+
+#+BEGIN_Lemma
+  This vector field $V$ is the Hamiltonian vector field associated to
+  the Hamiltonian \[G=\int d^nx\left(\pi_1\phi_2-\pi_2\phi_1\right).\]
+  In terms of $\psi=\frac{1}{\sqrt{2}}(\phi_1+i\phi_2)$ and
+  $\pi=\frac{1}{\sqrt{2}}(\pi_1-i\pi_2)$, this is $G=-i\int
+  d^nx\left(\pi\psi-\pi^*\psi^*\right)$, or, using the fact that
+  under the Hamiltonian flow of $H$ we have $\pi=\dot{\psi}^*$,
+  $G=i\int d^nx\left(\dot{\psi}\psi^*-\dot{\psi}^*\psi\right)$. If you
+  are a physicist, this is the usual expression for the conserved
+  charge associated with the $S^1$-action (modulo a sign?).
+#+END_Lemma
+#+BEGIN_proof
+  We have
+  \begin{align*}
+    \delta G(W)&=\int d^nx\left(-\pi_2W_{\phi_1}+\pi_1W_{\phi_2}
+                 +\phi_2W_{\pi_1}-\phi_1W_{\pi_2}\right)\\
+               &=-\Omega(V,W),
+  \end{align*}
+  so $V$ is the Hamiltonian vector field associated to $G$.
+#+END_proof
+
+** Noether currents
+
+Up till now, everything we have said is just like in the case of
+finite-dimensional Hamiltonian systems: when we have a symplectic
+phase space, Hamiltonian functions give rise to Hamiltonian symmetries
+of the phase space and vice versa. Now we come to a phenomenon which
+only really makes sense in the field theory setting: the idea of
+/Noether currents/.
+
+We start with a Hamiltonian $H=\int d^nx\mathcal{H}$ which generates
+the time-evolution of our system. Suppose we have another function
+$G=\int d^nx\mathcal{G}$ which generates a Hamiltonian flow that
+commutes with $H$, in other words $\{H,G\}=0$. An example would be the
+free complex scalar field $\psi$ with its free Hamiltonian and the
+circle action rotating the phase of $\psi$. The claim is that, not
+only does the time derivative of $G$ vanish along the flow of $H$, but
+the time derivative of $\mathcal{G}$ is equal to the divergence of a
+vector field $J$ on space. This is a stronger assertion: if you
+integrate $\dot{\mathcal{G}}=\nabla\cdot J$ over space then you get
+$\dot{G}=0$ because the integral of a divergence is zero. Moreover,
+you can figure out what the vector field $J$ is using the
+time-honoured trick of integrating by parts. The 4-vector
+$(\mathcal{G},J)$ is then called the /Noether current/ associated to
+the symmetry. It is not uniquely determined, since we can always add a
+gradient vector field to $J$ without changing the property that
+$\nabla\cdot J=\dot{\mathcal{G}}$. Nonetheless, there's usually a
+sensible-looking choice.
+
+The key point which allows us to find these currents is the well-known
+fact in symplectic geometry that if you have Hamiltonian functions $A$
+and $B$ (with Hamiltonian vector fields $V$ and $W$), you let $\phi_t$
+be the Hamiltonian flow associated to $A$, and you consider the
+function $B(\phi_t(x))$ then $\dot{B}=\{A,B\}=\Omega(V,W)$. Armed with
+this fact, we will study the simplest example.
+
+#+BEGIN_exm
+  Let's revisit the example of the charged scalar field. Let
+  $\alpha(x)$ be a function on space, and consider the modified
+  Hamiltonian \[G_\alpha=\int
+  d^nx\alpha(x)\left(\pi_1\phi_2-\pi_2\phi_1\right).\] This no longer
+  commutes with the Hamiltonian $H$. It generates the circle action
+  which sends the field $\psi(x)$ to the field $e^{i\alpha(x)}\psi(x)$
+  (i.e. the phase shift depends on position). The corresponding
+  Hamiltonian vector field is
+  \[V_\alpha=(-\phi_2\alpha,\phi_1\alpha,-\pi_2\alpha,\pi_1\alpha).\]
+  Since $G_\alpha$ and $H$ do not commute, we can ask how $G_\alpha$
+  evolves along the flow of $H$. From the previous paragraph we know
+  that \[\dot{G}_\alpha=\{H,G_\alpha\}=\Omega(X,V_\alpha),\]
+  where
+  $X=(\pi_1,\pi_2,\nabla^2\phi_1-m^2\phi_1,\nabla^2\phi_2-m^2\phi_2)$
+  is the Hamiltonian vector field associated to $H$. In other words:
+  \begin{align*}
+    \dot{G}_\alpha&=\int
+      d^nx\left(\pi_1(-\pi_2\alpha)+\pi_2(\pi_1\alpha)\right.\\
+       & \left.+(\nabla^2\phi_1-m^2\phi_1)\phi_2\alpha-(\nabla^2\phi_2-m^2\phi_2)\phi_1\alpha\right)\\
+      &=\int d^nx\alpha\left(\phi_2\nabla^2\phi_1-\phi_1\nabla^2\phi_2\right)
+  \end{align*}
+  If there were no $\alpha$ here then we could integrate by parts and
+  everything would cancel; indeed, that is why $G$ is a conserved
+  quantity (when $\alpha=1$). Note that both sides are given by an
+  integral:
+  \[\int d^nx\alpha\dot{\mathcal{G}}=\int
+  d^nx\alpha\left(\phi_2\nabla^2\phi_1-\phi_1\nabla^2\phi_2\right),\]
+  and $\alpha$ is completely arbitrary. Therefore the integrands
+  themselves must agree:
+  \[\dot{\mathcal{G}}=\phi_2\nabla^2\phi_1-\phi_1\nabla^2\phi_2.\]
+  But the quantity on the right is equal to
+  $\nabla\cdot J$ with
+  $J=\phi_2\nabla\phi_1-\phi_1\nabla\phi_2$. Therefore we end up with
+  \[\dot{\mathcal{G}}=\nabla\cdot J,\]
+  as required. The 4-vector $j=(\mathcal{G},J)$ is then
+  \[j^\mu=\phi_2\partial^{\mu}\phi_1-\phi_1\partial^{\mu}\phi_2,\]
+  which is what I meant by ``sensible-looking''. The equation
+  $\dot{G}=\nabla\cdot J$ can be written in a more
+  Lorentz-invariant-looking way as
+  \[\partial_\mu j^\mu=0.\]
+#+END_exm
+
+As an exercise, show that playing the same trick with the free real
+scalar field $\phi$ and the Hamiltonian $H_\alpha=\frac{1}{2}\int
+  d^nx\alpha(\pi^2+|\nabla\phi|^2+m^2\phi^2)$ yields
+$\pi(x)\nabla\phi(x)$ as the Noether current; this is the integrand of
+the field momentum we studied first of all.
+
+This trick only makes sense in field theory, where our Hamiltonian
+functions have the form $\int d^nx\mathcal{G}$: otherwise we cannot
+insert a cheeky factor of $\alpha$. It also relies heavily on the
+equations of motion for $G_\alpha$,
+i.e. $\dot{G}_\alpha=\{H,G_\alpha\}$. 

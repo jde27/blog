@@ -1,0 +1,74 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: HEA course for new maths lecturers
+
+* HEA course for new maths lecturers
+
+[2012-09-18 Tue]
+
+Last week I had the pleasure of attending a course for new maths
+lecturers run by the [[http://www.heacademy.ac.uk/disciplines/maths-stats-or][Maths, Stats and Operations Research discipline
+of the Higher Education Academy (HEA/MSOR)]]. I was pleased that it
+dispelled several myths for me, in particular the myth that these
+courses never cater for mathematicians' needs. All the talks were
+given by experienced mathematics lecturers or people who have spent a
+considerable amount of time undertaking educational research specific
+to university-level maths. With such good quality input, and with the
+high level of engagement discussion amongst the participants, I
+learned a lot. Here are a couple of ideas I took away (not necessarily
+maths-specific!).
+
+- It's important to let people figure things out by themselves. Maybe
+  this advice sounds obvious, but I realised during the course that my
+  natural inclination when I see someone struggling with a problem for
+  more than about a minute is to jump in and suggest or hint at the
+  next step. (e.g. "If you don't believe the statement, maybe you
+  should just try and write down a counterexample?") If someone
+  figures out the answer with my help, that's not as valuable to them
+  as figuring out for themselves how to even approach the question in
+  the first place. So in future I will try and sit back and listen and
+  let my students shine.
+- Get students to construct examples. I liked this extremely practical
+  piece of advice. Instead of giving them a list of examples and
+  saying "Check which ones have certain properties," you can instead
+  ask them to get their hands dirty and construct examples. You can
+  even do this during a lecture to give them time to absorb the
+  definitions you've just told them (or to realise that they didn't
+  understand something). Much like a radio or an atomic bomb, when you
+  construct a mathematical object for yourself you understand it much
+  better than if it's handed to you with a set of how-to-use
+  instructions.
+- There's a distinction between problems and exercises, and students
+  need both to thrive. Problems being problematic and involving
+  thought, exercises being repetitive (even if hard). The point was
+  also made that exercises can conceivably be automated and that there
+  is software (STACK, due to [[http://www.maths.ed.ac.uk/~csangwin/][Chris Sangwin]]) which interacts with
+  Moodle (a popular "virtual learning environment") which allows
+  students to respond in mathematics which is then parsed by a
+  computer algebra system and the answer is checked. For example, the
+  student is asked "Give an example of an odd function", they input
+  $sin(x)$ and the computer checks that they got it right. This has
+  the advantage that they can do many exercise and get immediate
+  feedback on how they're doing. By contrast, imagine having to mark a
+  student's answers to an indeterminate number of randomly generated
+  integrals... isn't there something better you could be doing with
+  your time? You might argue that university level maths involves more
+  thought and proof than mindless computation, and maybe this
+  automation is more useful for pre-university students. That's
+  probably true, but my Methods course this term will involve plenty
+  of computation, mindless or otherwise.
+- New lecturers are overambitious with content. Having lectured two
+  graduate-level courses and struggled to say what I wanted to say in
+  the time I had to say it, I can testify to this. But can I put this
+  observation to use when lecturing this year? My second years had
+  better hope so...
+A useful piece of software I encountered was [[http://www.geogebra.org/cms/][GeoGebra]] (for producing
+geometric diagrams, etc.). While it's true that the same results (and
+many more) could be obtained with Maple or Sage, it's also true that
+GeoGebra is free and intuitive, and it's extremely quick to produce
+diagrams of the sort it's good at (not as code-heavy as Maple). I'm
+told there's a 3d version and this would have been useful for
+producing [[./lines-through-four-lines.org][these diagrams]].
+
+I can highly recommend this HEA course for new maths/stats lecturers.
+
+

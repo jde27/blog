@@ -1,0 +1,41 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./style.css"/>
+#+OPTIONS: html-preamble:t tex:t
+#+BIND: org-export-publishing-directory "../html"
+#+LaTeX_HEADER: \usepackage{amsthm,amsmath,amsfonts,amscd}
+#+LaTeX_HEADER: \usepackage{tikz,verbatim}
+#+LaTeX_HEADER: \usepackage{multicol,parskip}
+#+LaTeX_HEADER: \usetikzlibrary{decorations.pathreplacing}
+#+LaTeX_HEADER: \usetikzlibrary{decorations.markings}
+#+LaTeX_HEADER: \usetikzlibrary{fadings}
+#+LaTeX_HEADER: \usetikzlibrary{shapes}
+#+LaTeX_HEADER: \usepackage{wasysym}
+#+LaTeX_HEADER: \newcommand{\floor}[1]{\lfloor #1 \rfloor}
+#+LaTeX_HEADER: \newcommand{\RR}{\mathbf{R}}
+#+LaTeX_HEADER: \newcommand{\CC}{\mathbf{C}}
+#+LaTeX_HEADER: \newcommand{\QQ}{\mathbf{Q}}
+#+LaTeX_HEADER: \newcommand{\ZZ}{\mathbf{Z}}
+#+LaTeX_HEADER: \newcommand{\cp}[1]{\mathbf{CP}^{#1}}
+#+LaTeX_HEADER: \newcommand{\rp}[1]{\mathbf{RP}^{#1}}
+#+LaTeX_HEADER: \newcommand{\OP}[1]{\mathrm{#1}}
+#+LaTeX_HEADER: \newcommand{\matr}[4]{\left(\begin{array}{cc}#1 & #2\\ #3 & #4\end{array}\right)}
+#+LaTeX_HEADER: \newcommand{\mthrthr}[9]{\left(\begin{array}{ccc}#1 & #2 & #3\\ #4 & #5 & #6\\ #7 & #8 & #9\end{array}\right)}
+#+LaTeX_HEADER: \newcommand{\vect}[2]{\left(\begin{array}{c}#1\\#2\end{array}\right)}
+#+LaTeX_HEADER: \newcommand{\vthr}[3]{\left(\begin{array}{c}#1\\#2\\#3\end{array}\right)}
+#+LaTeX_HEADER: \newcommand{\TO}[3]{#1\stackrel{#2}{\longrightarrow}#3}
+#+LaTeX_HEADER: \newtheorem{theorem}{Theorem}[section]
+#+LaTeX_HEADER: \newtheorem{lemma}[theorem]{Lemma}
+#+LaTeX_HEADER: \newtheorem{corollary}[theorem]{Corollary}
+#+LaTeX_HEADER: \newtheorem{proposition}[theorem]{Proposition}
+#+LaTeX_HEADER: \theoremstyle{remark}
+#+LaTeX_HEADER: \newtheorem{remark}[theorem]{Remark}
+#+LaTeX_HEADER: \theoremstyle{definition}
+#+LaTeX_HEADER: \newtheorem{definition}[theorem]{Definition}
+#+LaTeX_HEADER: \newtheorem{exm}[theorem]{Example}
+#+LaTeX_HEADER: \begingroup
+#+LaTeX_HEADER:     \makeatletter
+#+LaTeX_HEADER:     \@for\theoremstyle:=definition,remark,plain\do{%
+#+LaTeX_HEADER:         \expandafter\g@addto@macro\csname th@\theoremstyle\endcsname{%
+#+LaTeX_HEADER:             \addtolength\thm@preskip\parskip
+#+LaTeX_HEADER:             }%
+#+LaTeX_HEADER:         }
+#+LaTeX_HEADER: \endgroup

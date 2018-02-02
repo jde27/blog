@@ -1,0 +1,114 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: A sanity check for the Fukaya category of a cotangent bundle
+
+* A sanity check for the Fukaya category of a cotangent bundle
+
+[2015-02-15 Sun]
+
+Yesterday I gave a seminar about Fukaya categories and I didn’t have
+chance to do quite as much explicit computation as I’d hoped. I
+thought I'd write a blog post with a basic calculation to show you the
+kind of things that are involved in doing computations in Fukaya
+categories. I will show (using Abouzaid's description of the zero
+section in terms of the cotangent fibre) that the zero section and the
+cotangent fibre have $rank(HF) = 1$, in the special case of $T^*S^1$. This
+is such a trivial result in the end (you could do the computation just
+by looking at the intersection and seeing it's a single point) that
+you should think of this post as more of a sanity check.
+
+The first 3 hours of what I said was essentially covering Auroux's
+introduction to Fukaya categories (http://arxiv.org/abs/1301.7056), so
+if you look at that first, you should be able to figure out what I'm
+talking about. I hope that all my grading conventions agree with those
+of Abouzaid – if you notice a discrepancy, please let me know!
+
+Abouzaid (http://arxiv.org/abs/1003.4449) proves that a cotangent
+fibre in $T^*M$ generates the wrapped Fukaya category of $T^*M$. In
+fact, if $L$ is an exact Lagrangian in $T^*M$ he gives a prescription
+(http://arxiv.org/abs/0907.5606) for writing down a twisted complex
+for $L$ using only cotangent fibres. In the case when $L$ is the graph
+of an exact 1-form $dF$ where $F$ is a Morse function, there's a very
+nice description: for each critical point $p$ of $F$ you write down
+$T_p^*M$ shifted in degree by minus the Morse index $i_p$ of $p$ and
+the differential in the twisted complex between $T_p^*M[-i_p]$ and
+$T_q^*M[-i_q]$ is an element of
+$CF^{1+i_q-i_p}(T_p^*M[-i_p],T^*_qM[-i_q])$. Abouzaid computed that
+this Floer complex is quasiisomorphic to the cubical chains on the
+space $P(p,q)$ of paths between $p$ and $q$ with the grading reversed,
+so the morphism should live in $C_{i_p-i_q-1}(P(p,q))$. What cubical
+chain do we take? We consider the moduli space of downward Morse
+flowlines from $p$ to $q$, cubulate it, and consider that as a
+$(i_p-i_q-1)$-dimensional cubical chain on path space. The usual
+combinatorics of the boundaries of Morse moduli spaces translates into
+a relation satisfied by the different components of the differential:
+namely the Maurer-Cartan equation. This means that the object we write
+down is a twisted complex.
+
+So here's our example.
+
+Take $T^*S^1$. The obvious Morse function $F$ on $S^1$ has 2 critical
+points $p,q$ and two flowlines. The corresponding twisted complex
+should be
+\[T_p[-1] \to T_q\]
+where $T_p$ and $T_q$ are the cotangent fibres at $p$ and $q$. The
+morphism should be an element of $CF^0(T_p,T_q)$, which is
+quasiisomorphic to 0-chains on the space of paths from $p$ to
+$q$. Pick one of the two flowlines as a path connecting $q$ to $p$ and
+postcompose with this path to identify the path space with the loop
+space based at $p$. The based loop space of $S^1$ has $\mathbb{Z}$
+components (indexed by winding number) each of which is contractible
+so there's a model for chains on the based loop space which is the
+group ring of $\mathbb{Z}$, in other words Laurent polynomials
+$\mathbb{Z}[t,t^{-1}]$ ($t$ is a formal variable of degree zero whose
+exponent is the winding number).
+
+The flowlines from $p$ to $q$ give two points in the based loop space;
+by the way we identified paths with loops, we know that one of these
+is contractible. The other one wraps once around the circle, so in
+total the morphism should be $1+t$. Therefore the twisted complex
+representing $S^1=\mathrm{graph}(dF)$ is \[T[-1] \stackrel{1+t}{\to}
+T\] (I'm no longer distinguishing between different cotangent fibres:
+they're all quasiisomorphic so I don't need to).
+
+Now let's check that $HF(S^1,T)$ has rank 1 (which it should because
+the zero-section and the cotangent fibre intersect transversely
+once!). $HF$ means taking Homs from this twisted complex to $T$:
+\[HF(S^1,T) = \mathrm{Hom}(T[-1]\stackrel{1+t}{\to}T,T)\] Remember
+this just means: take the direct sum \[\mathrm{Hom}(T[-1],T)\oplus
+\mathrm{Hom}(T,T)\] with the differential \[a\oplus b \mapsto
+(m_1(a)+(1+t)b) \oplus m_1(b)\] (this is precisely the
+lower/upper-triangular thing you'd write down in the case of taking
+cones of chain complexes). The differential $m_1$ is zero for this
+model of chains on the based loop space (I am basically saying that
+the based loop space of $S^1$ is homotopy equivalent to a bunch of
+points, so it's formal and we can take its cohomology as the chain
+model) so this differential is just \[a\oplus b \mapsto (1+t)b \oplus
+0\] When is $a\oplus b$ closed? When $(1+t)b=0$. But multiplication by
+$(1+t)$ is injective on Laurent polynomials (we can invert $(1+t)$ in
+the bigger ring of formal Laurent series), so this means $b=0$.
+
+When is a closed element $a\oplus 0$ exact? When $a=(1+t)b$ for some
+$b$. But a Laurent polynomial \[a_{-n}t^n + ... +a_mt^m\] is divisible
+by $1+t$ if and only if the alternating sum of the coefficients $a_i$
+vanishes. This is one equation on the coefficients, hence the cokernel
+of $b\mapsto(1+t)b$ is rank 1.
+
+Therefore $HF(S^1,T)$ has rank 1.
+
+While this seems like a lot of effort for a computation we can do just
+by inspection (there's only one intersection point!) it's also
+something you can imagine working for you much more generally if you
+knew enough about chains on the based loop space.
+
+Exercise: do the same computation for some other manifolds with
+particularly simple Morse functions, e.g. $S^n$.
+
+N.B. If you're trying the exercise, note that Abouzaid proves the
+cotangent fibre is quasiisomorphic to cubical chains on the based loop
+space: this is important – composition of loops is basically
+associative on the nose for cubical chains. For singular chains I
+think you would need a nontrivial $A_{\infty}$ structure (like
+Stasheff found). Now there's a nice, tractable, model for cubical
+chains on the based loop space, due to Adams and Hilton from the
+1950s; if you're interested you can read about it (in the
+simply-connected case) [[https://eudml.org/doc/139131][here]].

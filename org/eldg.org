@@ -1,0 +1,62 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: E-Learning: Video lectures filmed by students
+
+* E-Learning: Video lectures filmed by students
+
+[2013-06-02 Tue]
+
+I recently received a grant from the UCL e-learning team to run a
+project for filming maths lectures.
+
+*The aim:* The aim is to provide UCL mathematics students with
+high-quality video coverage of some of their core lectures. This would
+be particularly useful in mathematics where material is hard to absorb
+on a first hearing. We'd hope this would be particularly useful for
+our many overseas students with English as an nth language for
+n>1. Many of our courses are big ancillary courses for other
+departments and having lectures available online would help alleviate
+the possible clashes that might occur in timetabling.
+
+*The problem:* Mathematical pedagogy focuses on board-based lectures,
+which are difficult to film under the current system used at UCL
+because the camera quality is not sufficient to capture extensive
+boardwork.
+
+*The proposal:* Use a small, high-quality camera with a mount
+(borrowed from the e-learning team), operated by students from the
+front of the lecture theatre. We will train a group of students to act
+as camera-operators.
+
+This is only a trial, so we will concentrate on two second-year
+courses (Mathematical Methods 3 and Complex Analysis), filmed by a
+team of four students. These students would preferably be from other
+classes so that the students in the target classes can focus on
+learning and not on filming. This would result in a workload of one or
+two hours/week for each student, which is hopefully not too much to
+distract from their own lectures, and they will be paid for their work
+(that's where the grant is going).
+
+The results will be posted to Lecturecast and the students will be
+able to give continuous feedback via Moodle forums, to that we can
+optimise our filming techniques. We will also assess the effectiveness
+of this method and the usefulness of the new resource using
+questionnaires.
+
+From a lecturer's perspective, I want my lectures to be videoed so
+that I can watch them back and know where I need to explain things
+better next time. While it is slightly terrifying for the
+unintentional verbal and notational errors one makes during lectures
+to be captured and viewable, it would surely be more useful for me to
+spot them so that I know why my students are getting confused.
+
+While high-quality tracking cameras might be an optimal solution to
+this problem, they are expensive and we would first like to assess the
+usefulness of video lectures to our students. I also think that having
+a camera operated by someone who understands and appreciates the
+lectures, someone who can point the camera at what they think is most
+relevant, will lead to a more natural and useful video. I have seen
+the results of tracking cameras before, and I usually ended up
+standing on the far side of the board from the equation I was talking
+about. Having the camera placed at the front of the lecture theatre
+also seems like a more surefire way of being able to see what's been
+written.

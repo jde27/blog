@@ -1,0 +1,93 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: December: video project update
+
+* December: video project update
+
+[2014-12-14 Sun]
+
+The video project has been progressing nicely: all of the videos have
+now been compressed and most have been uploaded to either Youtube or
+Lecturecast.
+
+The Methods 3 videos have accrued more than 11,000 minutes of views:
+an average of 37 views each with an average view duration of just over
+10 minutes.
+
+One can make some interesting deductions about study patterns. Methods
+3, Lecture 10, part 1 (with 92 views at an average of 14.41 minutes
+per view) is the most watched. It concerns the theory and computation
+of Fourier series and the application of this to the solution of the
+heat equation. A large number of these views occurred the day before a
+homework was due which made heavy use of the material in this
+lecture. As a counterpoint to this, reading week (when the students
+had extra time to catch up on lectures) was a time of relatively
+low-use. In general, activity peaks around the time when homework
+deadlines loom and I anticipate that we will have another huge peak
+around exam term.
+
+** Feedback
+
+I have had some very positive feedback about how useful the videos
+have been (even offers to film for free!) and some excellent
+suggestions for improvement. These included adding the date of the
+lecture to the video title (for ease of comparison with lecture notes)
+and giving more detailed descriptions of lecture content in the video
+caption (including timings of different sections of each lecture);
+this would make it easier to navigate through a solid hour of
+material. While I don't have time to do this scrupulously, I have
+added some pointers in some of the videos.
+
+The audio quality is still pretty poor and I do not know how to
+improve this.
+
+A Moodle feedback questionnaire had relatively low uptake (11/195
+responses), so nothing of statistically significance can be said. All
+but one respondent thought videos were useful in principle, but by its
+nature the questionnaire is likely to attract responses from students
+who were most enthusiastic about the videos in the first place. The
+comments left were extremely positive.
+
+** Lecturecast
+
+I had to compress my videos much further before they were able to be
+uploaded to Lecturecast, and the Lecturecast system has proved very
+user-unfriendly. For instance, uploads are made using a Java applet
+which fails to run on Linux because it requires unrestricted
+permissions (even Windows warns you about this and explains that the
+code will soon be deprecated). What’s wrong with a simple HTML upload
+form?
+
+Note that eight out of the eleven students who responded to the Moodle
+questionnaire preferred the lectures to be available on Youtube rather
+than Lecturecast. Two had no strong opinion. One preferred
+Lecturecast. I do not see that the sample bias present in the
+questionnaire (self-selecting the most enthusiastic students) would
+correlate with this particular variable, so I am inclined to take this
+at face value (bearing in mind that the sample size is rather small).
+
+** The next step
+
+At this point in the project two things are clear:
+
+- Some students are making good use of these resources and appreciate
+  their availability.
+- The scheme would be difficult to implement on a large scale without
+  significant help from administrative and technical support staff.
+
+To elaborate on the second point:
+
+- Each hour of video is currently taking four hours to compress and
+  further time to upload. My laptop is running late into the night and
+  at the weekend. This would need to be automated and done on a
+  UCL-based computer.
+- We would need more cameras and more SD cards (to avoid problems with
+  batteries running down and memory running out). And better quality
+  microphones.
+- The cost of hiring students to film is nontrivial. I think that
+  having mathematically competent human being filming has made a
+  significant difference to these videos and we have much better
+  quality as a result. But is there room in the department budget to
+  run such a project again and on a larger scale?
+
+I think the full picture of how useful these videos have been will
+only emerge later in the year (at exam time).

@@ -1,0 +1,161 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Flipping
+
+* Flipping 					:teaching:topology:elearning:
+
+[2018-01-31 Wed]
+
+I have decided that next year I am going to try lecture-flipping my
+topology module. Lecture-flipping is the practice whereby the lecturer
+prepares material for the students to view/read ahead of time, and the
+lecture is spent getting the students to explore the material in more
+depth and consolidate their understanding. I have decided to document
+my experience in case it's useful for other people thinking about
+flipping (specifically in the context of maths lectures).
+
+In this blog post I want to review:
+- why on earth I'm planning to do this,
+- what it means in practice,
+- what I've already done.
+
+
+** Why?
+
+Here are some very explicit learning outcomes I would expect from a
+student coming out of a four-year mathematics degree:
+
+/By the end of this degree, you should be able to:/
+
+1. /quickly and correctly evaluate which parts of a proof are easy or
+   routine and which require more thought or new ideas./
+2. /identify gaps in mathematical arguments (your own and those of
+   others) and evaluate whether they are easily fixed or not./
+3. /extract and summarise the key new idea or construction at the
+   heart of a proof./
+4. /devise detailed, step-by-step strategies for proving previously
+   unseen results./
+
+Of course, we hope that all students will pick these skills up by
+osmosis in analysis courses, but think about it from a student's
+perspective:
+
+- they are confronted with totally unfamiliar notation and ideas,
+- they struggle to see why they are required to prove these abstract
+  or banal statements,
+- with some effort, they can follow the lecturer's proofs, but if they
+  cannot follow some steps then they assume they are stupid,
+- they attempt to prove new results in homework questions, unsure
+  where to start, and often the only feedback they receive is a
+  numerical mark and a model solution.
+
+Whereabouts in all this do they get the chance to achieve any of the
+learning outcomes listed before? If it happens, it happens by
+accident.
+
+*** What the student does
+
+There is a persuasive line of reasoning in the education literature
+(for example in [[https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwih-c2fj4LZAhWjJcAKHWIlA6cQFggvMAE&url=https%3A%2F%2Fgu.se%2FinfoglueCalendar%2FdigitalAssets%2F1776442808_BifogadFil_Biggs.pdf&usg=AOvVaw2XgL0unu6z5n70KFVX_nml][Bigg's article "What the student does"]]) that goes as
+follows.
+
+- If you want students to achieve particular outcomes or acquire
+  certain abilities, you need to tailor your learning activities and
+  assessments to make sure it happens.
+- In particular, if you want the students to be able to *do* maths,
+  they should be the ones *doing* the maths (rather than a lecturer),
+  and we should be helping them to figure out what they're doing
+  wrong, rather than just telling them the right answer.
+
+Of course, we expect students to do their problem sheets religiously
+and to develop mathematical skills as they do so, but often they are
+working problems alone with very little idea where to get started, and
+all they can do afterwards is to learn by heart the model answers they
+are told as feedback.
+
+Lecture-flipping puts the emphasis on students doing maths during
+lecture time. Maybe they can work through some examples in groups and
+ask for guidance when they become stuck. Maybe they can flesh out a
+sketch-proof, or critique one another's written proofs. They can
+receive immediate feedback to help them, they can start to evaluate
+their own work and that of their peers.
+
+** What does it mean in practice?
+
+First, it means that much of the standard lecture content must be
+delivered in another format: either in books/lecture notes or online
+videos. Indeed, this aspect is what most people think of as
+lecture-flipping.
+
+More importantly, it means that you have to think of something else to
+do in lecture time. You have to design meaningful learning activities
+for the students to do to help them to achieve the learning outcomes
+you want.
+
+I have already written a comprehensive set of lecture notes for the
+module I'm planning to flip. My plan is the following:
+
+1. Restructure and divide the notes into 10-20 minute chunks and
+   decide which part of the notes I should just tell them (in a video)
+   and which parts they should be able to figure out for themselves
+   (maybe in groups in class).
+2. For each chunk, produce either:
+   1. a video, along with a set of comprehension questions and a set
+      of notes for them to read alongside the video. The comprehension
+      questions should be relatively quick and easy (the kind of
+      things you should be able to do instantaneously/mechanically if
+      you understood the video). They might involve
+      - filling in details of a proof from the video,
+      - correcting a slightly incorrect statement that was made in the
+        video,
+      - doing a slightly longer computation similar to one that was
+        covered in the video.
+   2. a lesson-plan for a face-to-face session in which we cover the
+      content, for example:
+      - 0:00-0:10 At the beginning of the class, state the result
+        that the deck group is isomorphic to the quotient $N_H/H$
+        where $N_H$ is the normaliser of $H$ and $H$ is the subgroup
+        associated to the quotient space. Get the class to remind you
+        of the definitions of all terms involved.
+      - 0:10-0:25 In pairs, work out what this means for some explicit
+        covering spaces (need to prepare handouts: one covering space
+        for each pair).
+      - 0:25-0:30 Share your conclusions with another pair.
+      - 0:30-0:40 As a whole class, formulate a strategy for proving
+        the theorem (lead them to the idea that if $\beta\in N_H$ then
+        there is a deck transformation $F_\beta$ taking $y$ to
+        $\sigma_\beta(y)$ and that you need to show this assignment
+        $\beta\mapsto F_\beta$ is (a) a homomorphism, (b) surjective,
+        (c) injective).
+      - 0:40-0:55 In pairs, try to implement that strategy. (Homework:
+        complete the proof. Next session, someone will present their
+        solution).
+
+Of course, you end up covering less content in class this way, but as
+I tried to emphasise earlier, the kind of skills they are developing
+are perhaps more important than just learning the content. For
+example, they are learning how to approach proofs for themselves, and
+how to talk constructively about maths with, and explain stuff to,
+their peers.
+
+** What have I already done?
+
+The last week of term I was not in UCL and wasn't able to give my
+lectures in person. Having already settled upon flipping next time
+around, I decided to record the week's lectures as videos and set some
+learning activities as homework. This doesn't count as flipped
+learning, because it wasn't backed up with face-to-face contact
+time. Nonetheless, I learned a lot from doing it. [[http://www.homepages.ucl.ac.uk/~ucahjde/tg/flip/html/index.html][Here you can see the
+online learning materials I provided]].
+
+- The videos are still not great quality. I used Explain Everything on
+  my iPad, but I find writing on an iPad makes my writing look (even
+  more) like that of a 5-year old (than usual). I'm still trying to
+  figure out a good solution.
+- I embedded the videos into webpages which contained HTML lecture
+  notes and exercises. The students' feedback was that having lecture
+  notes on the same page as the videos was very helpful: when speaking
+  out loud, I tend to be slightly imprecise and try to convey the
+  sense of an argument; when writing I am usually more precise, and
+  having both media together helped mitigate the occasional wooliness
+  of the videos.
+
