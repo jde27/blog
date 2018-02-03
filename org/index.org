@@ -1,7 +1,49 @@
 #+SETUPFILE: ../aux/head.org
 #+TITLE: Blog index
 
-* A crib sheet for surfaces :geometry:
+* Farmageddon 							:environment:
+
+[2018-02-03 Sat]
+
+[[https://images-na.ssl-images-amazon.com/images/I/51dRZ-GfOaL._SX325_BO1,204,203,200_.jpg]]
+
+I have just finished reading the book [[https://www.amazon.co.uk/Farmageddon-True-Cost-Cheap-Meat/dp/1408846446#immersive-view_1517664935840][Farmageddon]] by Philip Lymbery
+and Isabel Oakeshott. It is the most important book I have read in a
+number of years.  It is a dazzling journalistic expose of how
+industrial-scale agriculture and factory farming has systematically
+raped the world's farmlands in the last half century.
+
+The book's main theses are:
+- pasture-reared livestock are a vastly more efficient use of global
+  food resources than factory-farmed animals: pasture-reared animals
+  consume mostly grass and their excrement fertilises the soil; by
+  contrast, factory-farmed animals eat food that could otherwise be
+  fed to humans (grain, soy and fish). Moreover, their waste is
+  difficult to dispose of and, when dumped on arable land en masse as
+  fertiliser, leaks into water systems and causes eutrophism and even
+  health problems in humans.
+- overcrowded conditions for animals risk outbreaks of contagious
+  disease; to combat this, it is necessary to overuse antibiotics,
+  with predictable consequences. Even if the farmed animals are
+  treated, diseases and parasites can escape into and decimate wild
+  animal populations (the particular example chosen to illustrate this
+  was fish-farming of salmon).
+- all of this is driven by overconsumption and waste of cheap meat and
+  fish products. One claim I found particularly staggering was that
+  the equivalent of 11.5 billion chickens each year are wasted
+  worldwide.
+- monoculture and use of chemical weed control, while yielding bigger
+  and more consistent yields, are having a terrifying effect on
+  wildlife, to the extent where (coupled with the effect of climate
+  change) we may be experiencing a mass extinction event, primarily
+  caused by human activity.
+The book concludes with some suggestions for how we, as consumers and
+citizens can make a difference. One prominent suggestion which we can
+implement very easily is to cut down our meat intake, avoid
+factory-farmed products and buy local produce. If you're not
+convinced, you should read the book.
+
+* A crib sheet for surfaces 					   :geometry:
 
 [2018-02-02 Fri]
 
@@ -43,7 +85,7 @@ clarifications and errata to the blog.
   cell complexes in the complex projective plane) joint with Ivan
   Smith.
 
-* Flipping 					:teaching:topology:elearning:
+* Flipping 					:teaching:topology:
 
 [2018-01-31 Wed]
 
@@ -133,7 +175,7 @@ into this stuff after a long break.
 If you are interested in attending the reading group, please let Ed or
 me know.
 
-* Equivalence relations 				  :revision:mathm205:
+* Equivalence relations 				  :teaching:topology:
 
 [2017-09-17 Sun]
 
@@ -206,7 +248,7 @@ rather than baryons/mesons. It is unusually easy to follow (if you
 know a bit of representation theory) and I learned a lot from reading
 it.
 
-* Is the speed of light constant? 			   :relativity:light:
+* Is the speed of light constant? 			   :relativity:
 
 [2016-08-09 Tue]
 
@@ -225,7 +267,7 @@ remarks in the blogpost below, just follow the link above and read it.
 
 [[./lightspeed.org][Read on to find out more...]]
 
-* Using graphviz to illustrate course structure     :code:elearning:teaching:
+* Using graphviz to illustrate course structure     :teaching:
 
 [2015-10-22 Thu]
 
@@ -242,7 +284,7 @@ shells scripts for creating and uploading the webpage) available [[http://www.ho
 
 For more details, see the [[http://www.homepages.ucl.ac.uk/~ucahjde/choices/readme.txt][readme file]].
 
-* Some simple spectral sequences 		  :algebra:geometry:teaching:
+* Some simple spectral sequences 		  :geometry:teaching:
 
 [2015-04-28 Tue]
 
@@ -257,7 +299,7 @@ notation. Once you’ve seen how the proof goes, you should go and look
 in Bott-Tu or McCleary for some actual examples and computations.
 
 Please let me know of any errors in the exercises!
-* A sanity check for the Fukaya category of a cotangent bundle :algebra:geometry:
+* A sanity check for the Fukaya category of a cotangent bundle :geometry:
 
 [2015-02-15 Tue]
 
@@ -274,7 +316,7 @@ single point) that you should think of this post as more of a sanity
 check.
 
 [[./sanitycheck.org][Read on to test your sanity.]]
-* Cone eversion 					  :topology:geometry:
+* Cone eversion 					  :geometry:
 
 [2014-10-12 Sun]
 
@@ -293,7 +335,7 @@ permission (the copyright is his).
 
 [[../img/coneeversionsteep.gif]]
 
-* Gromoll filtration 					  :topology:geometry:
+* Gromoll filtration 					  :geometry:
 
 [2014-07-14 Mon]
 
@@ -307,7 +349,7 @@ while we were writing this paper.
 
 [[./gromoll-filtration.org][Read more.]]
 
-* E-learning project report 					  :elearning:teaching: 
+* E-learning project report 					  :teaching: 
 
 [2014-06-12 Thu]
 

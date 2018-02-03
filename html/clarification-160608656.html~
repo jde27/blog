@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Clarification for arXiv:1606.08656</title>
+<!-- 2018-01-31 Wed 15:31 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a></div>
+</div>
+<div id="content">
+<h1 class="title">Clarification for arXiv:1606.08656</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Clarification for arXiv:1606.08656</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2018-01-31 Wed]</span></span>
+</p>
+
+<p>
+The paper Ivan Smith and I wrote on Lagrangian pinwheels in
+\(\mathbf{CP}^2\) and Markov numbers has recently appeared in <i>Geometry
+and Topology</i>. Shortly thereafter, Yong-Geun Oh contacted us with some
+excellent questions where our exposition was less than clear. In case
+anyone else has the same questions, I thought I would write a blog post
+clarifying these points.
+</p>
+
+<ul class="org-ul">
+<li>Lemma 2.16(c) should say \(T=\mathbb{Z}/(m)\) rather than
+\(\mathbb{Z}/(\Delta/m)\).
+</li>
+<li>There is a discrepancy between what we write in Section 2.3:
+<ul class="org-ul">
+<li>``The generic orbit is homologous to \(p^2e/g\).'' (correct)
+</li>
+</ul>
+<p>
+and what we write in the final paragraph of Remark 3.15:
+</p>
+<ul class="org-ul">
+<li>``the generic Reeb orbits are homologically trivial in
+\(\Sigma_{p,q}\)'' (not true in general)
+</li>
+</ul>
+<p>
+Indeed, since \(H_1(\Sigma_{p,q};\mathbb{Z})=\mathbb{Z}/(p^2)\), this
+only holds when \(g=1\), which happens if and only if \(p\) is odd (see
+Remark 2.12).
+</p>
+</li>
+</ul>
+
+<p>
+This is important, because Remark 3.15 is used to justify why certain
+holomorphic curves asymptote to nongeneric Reeb orbits. As stated, the
+argument we give there holds only for odd \(p\).
+</p>
+
+<p>
+I will now explain the two situations in which we needed this fact and
+how it generalises to arbitrary values of \(p\). In the case when \(p\) is
+odd (and \(g=1\)), this reduces to what we wrote.
+</p>
+
+<ol class="org-ol">
+<li>In Theorem 4.16, we have a holomorphic cylinder which we have
+extracted from an SFT neck-stretching argument. One of its ends is
+asymptotic to a Reeb orbit on a component of the boundary called
+\(\Sigma_{p_2,q_2}\) (a contact lens space). We have already
+established that the Reeb orbits fall into two categories:
+``exceptional'' and ``generic'' (the Reeb orbits give a Seifert
+fibration of the lens space). <b>We want to show that this asymptote
+is to an exceptional orbit.</b>
+
+<p>
+The homology class of the generic orbit is \(p^2/g\) times the class
+of the exceptional orbit. The relative homology class of the
+cylinder is (in notation from the paper) \(D\mathcal{E}\) and the
+connecting homomorphism to
+\(H_1(\Sigma_{p_2,q_2};\mathbf{Z})=\mathbf{Z}/(p_2^2)\) is to reduce
+\(D\) modulo \(p_2^2\). We know that \(D\leq p_2/3\) by Lemma 4.11(B). If
+the asymptote were generic then \(D\) would reduce modulo \(p_2^2\) to
+something divisible by \(p_2^2/g\) (where \(g\) is \(1\), \(2\) or \(4\),
+depending on \(p_2\) by Remark 2.12). But then we get \(p_2^2/g\leq
+   p_2/3\), which implies \(p_2\leq g/3\leq 4/3\) so we don't need to
+worry about this case as \(p_2\) is at least \(2\).
+</p>
+</li>
+
+<li>In the other situation, if the SFT limit is a plane (the case
+\(|Z|=1\) in the paper) and the asymptote is generic then the
+homology class of the plane is, again, divisible by \(p^2/g\) and
+this contradicts the inequality \(D\leq 2p/3\) from Lemma 4.8.
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>
