@@ -1,7 +1,7 @@
 #+SETUPFILE: ../aux/head.org
 #+TITLE: Blog index
 
-* New blog functionality :blog:
+* New blog functionality 					       :blog:
 
 [2018-02-13 Tue]
 
