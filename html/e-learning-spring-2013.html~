@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>E-Learning: Spring 2013</title>
+<!-- 2018-02-13 Tue 12:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">E-Learning: Spring 2013</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">E-Learning: Spring 2013&#xa0;&#xa0;&#xa0;<span class="tag"><span class="elearning">elearning</span>&#xa0;<span class="teaching">teaching</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2013-06-27 Wed]</span></span>
+</p>
+
+<p>
+Henry Wilton, Bonita Carboo and I are the UCL Maths Department's
+e-learning reps. In the interests of sharing ideas, here are a few
+things I have discovered this Spring about e-learning which may be
+useful to others.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Moodle.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Moodle is the online platform UCL uses to interact with its
+students. I am only just waking up to the possibilities it offers.
+</p>
+
+<p>
+Most importantly for mathematicians, Moodle has LaTeX
+functionality. You may not discover it immediately, because the syntax
+is a little strange: you need to surround your LaTeX by double dollar
+signs, e.g. $$\sin(x)$$. This acts as if it were single dollar signs
+in ordinary LaTeX.
+</p>
+
+<p>
+I was initially unconvinced of the utility of online forums for
+students, but that changed drastically. I had a feeling that students
+wouldn’t use them, but I decided to give it a go. I was being asked
+many questions by email, many of which were duplicates, so I created a
+forum for the students to ask questions during exam term. If I was
+emailed a question, I didn’t answer it and instead strongly encouraged
+the student to ask on the Moodle forum. The result was a big uptake of
+the forum with sixteen threads involving posts from sixteen different
+students in the month leading up to the exam. This is only 10% of the
+class, but I was able to point others who asked questions by email to
+the answers I had posted on the forum, saving me time. If I had
+realised earlier how effective this would be, I would have introduced
+a forum from the outset.
+</p>
+
+<p>
+You can see stats on how many views your forum is getting by going to
+Navigation &gt; Reports &gt; Logs (thanks to Fiona Harkin for pointing this
+out). The revision forum had had 2491 views in just over a month. I
+would say this has been an extremely effective tool: while it was a
+lot of work to answer all the questions, that work counted for more.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Sage</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<a href="http://www.sagemath.org/index.html">Sage</a> is an open-source computer algebra program. You can run it online
+<del>using the Sage Notebook if you have an OpenID or</del> using the <a href="http://aleph.sagemath.org/">Sage Cell
+Server</a> which allows you to run small scripts without the bother of
+signing in. You can even embed it into webpages to create interactive
+content.
+</p>
+
+<p>
+One of the biggest problems my students had was getting practice
+calculating Fourier series, so I have written the bare bones of a
+short (easily extendable) interactive webpage for next year which
+should give them the practice they need. I will add more examples to
+this (if and) when I have time. If you want to see how the page works,
+you can see the Sage code embedded in the HTML by viewing the page
+source. The important things are the script tags in the document head.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">E-learning development grant</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+I am now the proud owner of an e-learning development grant to
+facilitate the filming of mathematics lectures and make them available
+online. For more information, see my <a href="./eldg.html">blog post here</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

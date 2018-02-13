@@ -1,0 +1,21 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: New blog functionality
+
+
+* New blog functionality :blog:
+
+[2018-02-13 Tue]
+
+At the behest of [[http://pbelmans.ncag.info/][Pieter Belmans]], I have now added an [[./rss.xml][RSS feed]] to the
+blog to make it easier for people to follow. I have also added a
+[[./blogroll.org][blogroll]]. Below, I include the shell script which I used to generate
+the RSS feed for the blog.
+
+#+INCLUDE: ../aux/rss.sh src sh
+
+This script is not without its flaws. For example, if a blog post is
+only on the index page and doesn't have as separate file to link to, I
+have just linked to the blog index (I should really include an anchor
+to link to... maybe another day). Probably, I should use ox-rss or
+some other elisp solution, but I find shell scripts easier to deal
+with.

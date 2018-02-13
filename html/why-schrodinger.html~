@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Why Schrödinger's equation?</title>
+<!-- 2018-02-13 Tue 12:18 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">Why Schrödinger's equation?</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Why Schrödinger's equation?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2012-11-05 Mon]</span></span>
+</p>
+
+<p>
+"Why this equation?"
+</p>
+
+<p>
+I recently overheard someone ask this about Schrödinger's
+equation. The answer they received was, for me, unsatisfying. "Because
+it agrees with experiment." Of course, that answers perfectly why the
+equation was adopted by future generations of physicists and indeed
+the calculation of the spectrum of atomic hydrogen from the energy
+eigenvalues of the Schrödinger operator is one of the most convincing
+and wholesome computations a young physicist can do. But the question
+that was left unanswered, the question I believe was being asked, was:
+"Why did Schrödinger write this equation down? Why not something
+else?" I don't believe for a second that Schrödinger sat down with an
+array of different equations and worked out what each of them
+predicted about hydrogen before he found the one that fit&#x2026;
+</p>
+
+<p>
+I turned to one of Schrödinger's (eminently readable) original papers
+on the subject:
+</p>
+
+<ul class="org-ul">
+<li>E.Schrödinger, <a href="http://web.archive.org/web/20081217040121/http://home.tiscali.nl/physis/HistoricPaper/Schroedinger/Schroedinger1926c.pdf">An Undulatory Theory of the Mechanics of Atoms and
+Molecules</a>, Physical Review (1926) Vol. 28, No. 6 pp. 1049-1070
+</li>
+</ul>
+
+<p>
+and was overjoyed to find that Schrödinger had a very definite picture
+in mind when he derived his equation. The idea was this: some
+ninety-nine years previously, William Rowan Hamilton had presented his
+general theory of geometric optics to the Royal Irish Academy, a
+mathematical description of light rays. This theory is a good
+approximation to reality when the light a has very short wavelength
+(like violet) but doesn't account for various optical phenomena like
+diffraction, which require the finer description of light as an
+electromagnetic wave. This description was put on a mathematical
+footing by Maxwell who proved that electromagnetic fields propagate in
+free space according to the wave equation.
+</p>
+
+<p>
+Hamilton later applied his formalism to describe classical
+mechanics. Schrödinger and de Broglie thought that one might
+reasonably expect there to be a wave theory underlying classical
+mechanics and reducing to it in the short wavelength limit. The
+difficulty was how to guess a wave equation that would give the right
+short wavelength limit.
+</p>
+
+<p>
+Schrödinger took as his starting point the Hamilton-Jacobi equation,
+so let's review this. I'll assume you're happy with the usual
+Hamiltonian/Lagrangian formulation of classical mechanics.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Hamilton-Jacobi theory</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+For any pair of points \(A,\ B\in\mathbf{R}^n\) consider the space of
+paths \(\gamma\colon [0,T]\to\mathbf{R}^n\) between \(A\) and \(B\). Let \(L\)
+be a Lagrangian and
+\[I(\gamma)=\int_0^TL(t,\gamma(t),\dot{\gamma}(t))dt\] be the action
+of that path. A classical path of time \(T\) joining \(A\) and \(B\) is a
+solution to the corresponding Euler-Lagrange equation. Let's suppose
+we're in an ideal situation: for any \(T\) and any pair of points \(A\),
+\(B\) there is a unique classical path \(\gamma_{A,B,T}\) of time \(T\)
+joining \(A\) and \(B\).
+</p>
+
+<p>
+Fix \(A\), but allow \(B\) and \(T\) to vary. Define the function
+\[W(B,T)=I(\gamma_{A,B,T}).\]
+</p>
+
+<p>
+The Hamilton-Jacobi equation is a PDE satisfied by this
+function. Let's first compute the derivatives of \(W\) with respect to
+\(B\). Replace \(B\) by \(B+b\) and suppose that
+\(\gamma_{A,B+b,T}(t)=\gamma_{A,B,T}(t)+\eta(t)\). Then, for small \(b\),
+writing \(\gamma_{A,B,T}(t)=(x_1(t),\ldots,x_n(t))\), we have
+\[I(\gamma_{A,B+b,T})=I(\gamma_{A,B,T})+\int_0^T\left(\frac{\partial
+L}{\partial x_i}-\frac{d}{dt}\frac{\partial
+L}{\partial\dot{x}_i}\right)dt+\left[\frac{\partial L}{\partial
+\dot{x}_i}\eta_i(t)\right]_0^T+\cdots\] by the usual Euler-Lagrange
+argument for computing the first variation of \(I\). Since
+\(\gamma_{A,B,T}\) is the classical path, the first term vanishes. Since
+\(\eta_i(0)=0\) (the point \(A\) is fixed) the only remaining term is
+\(\frac{\partial L}{\partial \dot{x}_i}(T)\eta_i(T)\). Since
+\(b_i=\eta_i(T)\), this means that the first variation of \(W\) is
+\[\frac{\partial W}{\partial B_i}=\frac{\partial
+L}{\partial\dot{x}_i}(T)\] By <a href="http://en.wikipedia.org/wiki/Hamiltonian_mechanics">Hamilton's equations</a>, \(\frac{\partial
+L}{\partial\dot{x}_i}=p_i\) so this says that \(\partial W/\partial B_i\)
+is the ith component of momentum at the endpoint of the path.
+</p>
+
+<p>
+Now, by the fundamental theorem of calculus:
+\[\frac{dW}{dt}=L(T,B_i,\dot{B}_i)\] but by the chain rule
+\[\frac{dW}{dT}=\frac{\partial W}{\partial T}+\sum_i\frac{\partial
+W}{\partial B_i}\dot{B}_i\] This gives \[\frac{\partial W}{\partial
+T}=L-\sum_ip_i\dot{B}_i\] where \(p_i\) is the momentum at the
+endpoint. Since the Hamiltonian \(H\) and Lagrangian \(L\) are related by
+a <a href="http://en.wikipedia.org/wiki/Legendre_transformation">Legendre transform</a>, we have
+\[L(T,B_i,\dot{B}_i)-\sum_ip_i\dot{B}_i=-H(T,B_i,p_i)=-H\left(T,B_i,\frac{\partial
+W}{\partial B_i}\right)\] so we see that \(W\) satisfies the
+Hamilton-Jacobi equation \[\frac{\partial W}{\partial T}=-H(T,B,\nabla
+W).\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Autonomous case</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+If we assume that the Hamiltonian is of the form
+\[\frac{1}{2m}(p_1^2+p_2^2+p_3^2)+V(x,y,z)\] (in particular
+time-independent) then we know by energy conservation that
+\[\partial^2W/\partial t^2=\partial H/\partial t=0\] so
+\[W(t,x,y,z)=-Et+S(x,y,z)\] for some constant \(E\), and the
+Hamilton-Jacobi equation reduces to \[|\nabla
+S|=\sqrt{2m(E-V(x,y,z))}.\] We also have the momentum \(p=\nabla S\)
+from our earlier computation so the speed
+\(\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}\) is \(|p|/m=|\nabla
+S|/m=\sqrt{\frac{2(E-V(x,y,z))}{m}}\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">Schrödinger's idea</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+In going from geometric optics to wave optics you imagine little sine
+waves travelling along your rays and you imagine that the phase of the
+sine wave changes linearly with the optical path length. Via the
+optical/mechanical analogy (the direct correspondence between the
+Hamiltonian formalism of optics and of mechanics) one translates
+optical path length into the action \(W\), so Schrödinger's guess was to
+replace classical trajectories by sine waves whose phase is
+proportional to the function \(W\). In other words, he postulates a
+wavefunction
+\[\psi(x,y,z,t)=A(x,y,z)\sin(W(x,y,z,t)/K)=A(x,y,z)\sin(-Et/K+S(x,y,z)/K)\]
+for some constant \(K\). This constant has units of action so that the
+argument of sine is dimensionless.
+</p>
+
+<p>
+The frequency of this sine wave is \(E/2\pi K\) so, comparing with the
+empirical relationship coming from the Einstein/Planck analyses of the
+photoelectric effect/black body radiation formula, Schrödinger guessed
+\[K=h/2\pi=\hbar.\]
+</p>
+
+<p>
+I want to quickly recall the notion of phase velocity. This is
+different to the velocity of our classical particles – rather it is
+the speed of a crest of the underlying wave. The crest is a surface of
+constant phase \(W=\pi/2\), that is at each instant \(t\) the crest is a
+level surface of the function \(S\), that is \(S=\pi/2+Et\). Let \(u\) be
+the vector field \(E\nabla S/|\nabla S|^2\) and let \((x(t),y(t),z(t))\)
+be an integral curve of \(u\) starting at time 0 on the crest. Then
+\[\frac{d}{dt}W(x(t),y(t),z(t),t)=-E+\nabla S\cdot u=0\] so the
+integral curve keeps up with the crest. We think of \(u\) as the phase
+velocity vector, so the phase speed is \[E/|\nabla
+S|=\frac{E}{\sqrt{2m(E-V)}}\] Crucially, the phase speed depends on
+\(E\) which depends on the frequency, so the wave equation which
+underlies Schrödinger's matter waves must be dispersive (which means
+exactly that the phase speed depends on the frequency – in other
+words, different frequencies will disperse because they travel with
+different speeds). Schrödinger next made the simplest guess as to what
+the equation should be governing waves of a fixed frequency, namely he
+guessed the usual wave equation
+\[\Delta\psi=\frac{1}{u^2}\frac{\partial^2\psi}{\partial t^2}\] for
+waves whose time dependence is through a factor \(e^{2\pi iEt/h}\). The
+usual (light) wave equation replaces \(u\) by the constant \(c\). Here \(u\)
+is given by the dispersion relation \[u=\frac{E}{\sqrt{2m(E-V)}}.\]
+Since \(\psi\) has time dependence \(e^{2\pi iEt/h}\) this means that
+\[\partial^2\psi/\partial t^2=-\frac{E^2}{\hbar^2}\psi\] Now
+subsituting this and the dispersion relation into the wave equation
+gives
+\[\Delta\psi=\frac{2m(E-V)}{E^2}\frac{E^2}{\hbar^2}\psi\]
+or the more familiar
+\[-\frac{\hbar^2}{2m}\Delta\psi+V\psi=E\psi\]
+which is Schrödinger's equation.
+</p>
+
+<p>
+For me, this route to Schrödinger's equation seems extremely natural
+when compared to Dirac's magic with Poisson brackets.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

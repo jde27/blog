@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Flipping</title>
+<!-- 2018-02-13 Tue 12:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">Flipping</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Flipping&#xa0;&#xa0;&#xa0;<span class="tag"><span class="teaching">teaching</span>&#xa0;<span class="topology">topology</span>&#xa0;<span class="elearning">elearning</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2018-01-31 Wed]</span></span>
+</p>
+
+<p>
+I have decided that next year I am going to try lecture-flipping my
+topology module. Lecture-flipping is the practice whereby the lecturer
+prepares material for the students to view/read ahead of time, and the
+lecture is spent getting the students to explore the material in more
+depth and consolidate their understanding. I have decided to document
+my experience in case it's useful for other people thinking about
+flipping (specifically in the context of maths lectures).
+</p>
+
+<p>
+In this blog post I want to review:
+</p>
+<ul class="org-ul">
+<li>why on earth I'm planning to do this,
+</li>
+<li>what it means in practice,
+</li>
+<li>what I've already done.
+</li>
+</ul>
+</div>
+
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Why?</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Here are some very explicit learning outcomes I would expect from a
+student coming out of a four-year mathematics degree:
+</p>
+
+<p>
+<i>By the end of this degree, you should be able to:</i>
+</p>
+
+<ol class="org-ol">
+<li><i>quickly and correctly evaluate which parts of a proof are easy or
+routine and which require more thought or new ideas.</i>
+</li>
+<li><i>identify gaps in mathematical arguments (your own and those of
+others) and evaluate whether they are easily fixed or not.</i>
+</li>
+<li><i>extract and summarise the key new idea or construction at the
+heart of a proof.</i>
+</li>
+<li><i>devise detailed, step-by-step strategies for proving previously
+unseen results.</i>
+</li>
+</ol>
+
+<p>
+Of course, we hope that all students will pick these skills up by
+osmosis in analysis courses, but think about it from a student's
+perspective:
+</p>
+
+<ul class="org-ul">
+<li>they are confronted with totally unfamiliar notation and ideas,
+</li>
+<li>they struggle to see why they are required to prove these abstract
+or banal statements,
+</li>
+<li>with some effort, they can follow the lecturer's proofs, but if they
+cannot follow some steps then they assume they are stupid,
+</li>
+<li>they attempt to prove new results in homework questions, unsure
+where to start, and often the only feedback they receive is a
+numerical mark and a model solution.
+</li>
+</ul>
+
+<p>
+Whereabouts in all this do they get the chance to achieve any of the
+learning outcomes listed before? If it happens, it happens by
+accident.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1">What the student does</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+There is a persuasive line of reasoning in the education literature
+(for example in <a href="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwih-c2fj4LZAhWjJcAKHWIlA6cQFggvMAE&url=https://gu.se/infoglueCalendar/digitalAssets/1776442808_BifogadFil_Biggs.pdf&usg=AOvVaw2XgL0unu6z5n70KFVX_nml">Bigg's article "What the student does"</a>) that goes as
+follows.
+</p>
+
+<ul class="org-ul">
+<li>If you want students to achieve particular outcomes or acquire
+certain abilities, you need to tailor your learning activities and
+assessments to make sure it happens.
+</li>
+<li>In particular, if you want the students to be able to <b>do</b> maths,
+they should be the ones <b>doing</b> the maths (rather than a lecturer),
+and we should be helping them to figure out what they're doing
+wrong, rather than just telling them the right answer.
+</li>
+</ul>
+
+<p>
+Of course, we expect students to do their problem sheets religiously
+and to develop mathematical skills as they do so, but often they are
+working problems alone with very little idea where to get started, and
+all they can do afterwards is to learn by heart the model answers they
+are told as feedback.
+</p>
+
+<p>
+Lecture-flipping puts the emphasis on students doing maths during
+lecture time. Maybe they can work through some examples in groups and
+ask for guidance when they become stuck. Maybe they can flesh out a
+sketch-proof, or critique one another's written proofs. They can
+receive immediate feedback to help them, they can start to evaluate
+their own work and that of their peers.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">What does it mean in practice?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+First, it means that much of the standard lecture content must be
+delivered in another format: either in books/lecture notes or online
+videos. Indeed, this aspect is what most people think of as
+lecture-flipping.
+</p>
+
+<p>
+More importantly, it means that you have to think of something else to
+do in lecture time. You have to design meaningful learning activities
+for the students to do to help them to achieve the learning outcomes
+you want.
+</p>
+
+<p>
+I have already written a comprehensive set of lecture notes for the
+module I'm planning to flip. My plan is the following:
+</p>
+
+<ol class="org-ol">
+<li>Restructure and divide the notes into 10-20 minute chunks and
+decide which part of the notes I should just tell them (in a video)
+and which parts they should be able to figure out for themselves
+(maybe in groups in class).
+</li>
+<li>For each chunk, produce either:
+<ol class="org-ol">
+<li>a video, along with a set of comprehension questions and a set
+of notes for them to read alongside the video. The comprehension
+questions should be relatively quick and easy (the kind of
+things you should be able to do instantaneously/mechanically if
+you understood the video). They might involve
+<ul class="org-ul">
+<li>filling in details of a proof from the video,
+</li>
+<li>correcting a slightly incorrect statement that was made in the
+video,
+</li>
+<li>doing a slightly longer computation similar to one that was
+covered in the video.
+</li>
+</ul>
+</li>
+<li>a lesson-plan for a face-to-face session in which we cover the
+content, for example:
+<ul class="org-ul">
+<li>0:00-0:10 At the beginning of the class, state the result
+that the deck group is isomorphic to the quotient \(N_H/H\)
+where \(N_H\) is the normaliser of \(H\) and \(H\) is the subgroup
+associated to the quotient space. Get the class to remind you
+of the definitions of all terms involved.
+</li>
+<li>0:10-0:25 In pairs, work out what this means for some explicit
+covering spaces (need to prepare handouts: one covering space
+for each pair).
+</li>
+<li>0:25-0:30 Share your conclusions with another pair.
+</li>
+<li>0:30-0:40 As a whole class, formulate a strategy for proving
+the theorem (lead them to the idea that if \(\beta\in N_H\) then
+there is a deck transformation \(F_\beta\) taking \(y\) to
+\(\sigma_\beta(y)\) and that you need to show this assignment
+\(\beta\mapsto F_\beta\) is (a) a homomorphism, (b) surjective,
+(c) injective).
+</li>
+<li>0:40-0:55 In pairs, try to implement that strategy. (Homework:
+complete the proof. Next session, someone will present their
+solution).
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+
+<p>
+Of course, you end up covering less content in class this way, but as
+I tried to emphasise earlier, the kind of skills they are developing
+are perhaps more important than just learning the content. For
+example, they are learning how to approach proofs for themselves, and
+how to talk constructively about maths with, and explain stuff to,
+their peers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">What have I already done?</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+The last week of term I was not in UCL and wasn't able to give my
+lectures in person. Having already settled upon flipping next time
+around, I decided to record the week's lectures as videos and set some
+learning activities as homework. This doesn't count as flipped
+learning, because it wasn't backed up with face-to-face contact
+time. Nonetheless, I learned a lot from doing it. <a href="http://www.homepages.ucl.ac.uk/~ucahjde/tg/flip/html/index.html">Here you can see the
+online learning materials I provided</a>.
+</p>
+
+<ul class="org-ul">
+<li>The videos are still not great quality. I used Explain Everything on
+my iPad, but I find writing on an iPad makes my writing look (even
+more) like that of a 5-year old (than usual). I'm still trying to
+figure out a good solution.
+</li>
+<li>I embedded the videos into webpages which contained HTML lecture
+notes and exercises. The students' feedback was that having lecture
+notes on the same page as the videos was very helpful: when speaking
+out loud, I tend to be slightly imprecise and try to convey the
+sense of an argument; when writing I am usually more precise, and
+having both media together helped mitigate the occasional wooliness
+of the videos.
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

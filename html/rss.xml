@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../aux/rss.css"?>
+<rss version="2.0">
+
+<channel>
+<title>Mathematical Field Notes</title>
+  <link>http://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+  <description>Blog of the UCL-based mathematician Jonny Evans</description>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+<item><title> Farmageddon </title>
+<category> environment </category>
+<pubDate> 2018-02-03 Sat </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/farmageddon.html</link>
+</item>
+<item><title> A crib sheet for surfaces </title>
+<category> geometry </category>
+<pubDate> 2018-02-02 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/surfaces-crib-sheet.html</link>
+</item>
+<item><title> Clarification for arXiv:1606.08656 </title>
+<category> geometry </category>
+<category> errata </category>
+<pubDate> 2018-01-31 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/clarification-160608656.html</link>
+</item>
+<item><title> Clarifications and errata </title>
+<category> errata </category>
+<pubDate> 2018-01-31 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/clarifications-errata.html</link>
+</item>
+<item><title> Flipping </title>
+<category> teaching </category>
+<category> topology </category>
+<pubDate> 2018-01-31 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/flip.html</link>
+</item>
+<item><title> TikZ and org-mode </title>
+<category> blog </category>
+<category> org </category>
+<category> emacs </category>
+<category> tikz </category>
+<pubDate> 2017-11-25 Sat </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/tikz.html</link>
+</item>
+<item><title> Noether's theorem in field theory </title>
+<category> qft </category>
+<pubDate> 2017-11-24 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/noether.html</link>
+</item>
+<item><title> The Heisenberg picture and causality </title>
+<category> qft </category>
+<pubDate> 2017-10-25 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/heisenberg.html</link>
+</item>
+<item><title> What is a quantum field? </title>
+<category> qft </category>
+<pubDate> 2017-09-24 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/what-is-qft.html</link>
+</item>
+<item><title> Pre-QFT 1: the quantum harmonic oscillator </title>
+<category> qft </category>
+<pubDate> 2017-09-15 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/shm.html</link>
+</item>
+<item><title> Quantum field theory reading group </title>
+<category> qft </category>
+<pubDate> 2017-09-24 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Equivalence relations </title>
+<category> teaching </category>
+<category> topology </category>
+<pubDate> 2017-09-17 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/equivalence-relation.html</link>
+</item>
+<item><title> Theorem and proof environments in CSS </title>
+<category> blog </category>
+<category> org </category>
+<pubDate> 2017-09-12 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/thm-and-proof.html</link>
+</item>
+<item><title> Connecting to wifi from command line </title>
+<category> linux </category>
+<category> wifi </category>
+<pubDate> 2017-09-12 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> New blog </title>
+<category> blog </category>
+<category> org </category>
+<category> emacs </category>
+<pubDate> 2017-09-12 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/new-blog.html</link>
+</item>
+<item><title> Resonances </title>
+<category> qft </category>
+<pubDate> 2016-10-30 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/resonances.html</link>
+</item>
+<item><title> Nice paper bump </title>
+<category> qft </category>
+<pubDate> 2016-08-31 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Is the speed of light constant? </title>
+<category> relativity </category>
+<pubDate> 2016-08-09 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/lightspeed.html</link>
+</item>
+<item><title> Using graphviz to illustrate course structure </title>
+<category> teaching </category>
+<pubDate> 2015-10-22 Thu </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Some simple spectral sequences </title>
+<category> geometry </category>
+<category> teaching </category>
+<pubDate> 2015-04-28 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> A sanity check for the Fukaya category of a cotangent bundle </title>
+<category> geometry </category>
+<pubDate> 2015-02-15 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/sanitycheck.html</link>
+</item>
+<item><title> Cone eversion </title>
+<category> geometry </category>
+<pubDate> 2014-10-12 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Gromoll filtration </title>
+<category> geometry </category>
+<pubDate> 2014-07-14 Mon </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> E-learning project report </title>
+<category> teaching </category>
+<pubDate> 2014-06-12 Thu </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> December: video project update </title>
+<category> elearning </category>
+<category> teaching </category>
+<pubDate> 2014-12-14 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/video-project-update.html</link>
+</item>
+<item><title> Geometry and undecidability </title>
+<category> geometry </category>
+<pubDate> 2013-11-21 Thu </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Video-lecture project weeks 1 and 2 </title>
+<category> elearning </category>
+<category> teaching </category>
+<pubDate> 2013-10-10 Thu </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> E-Learning: Video lectures filmed by students </title>
+<category> elearning </category>
+<category> teaching </category>
+<pubDate> 2013-07-02 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> E-Learning: Spring 2013 </title>
+<category> elearning </category>
+<category> teaching </category>
+<pubDate> 2013-06-27 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/e-learning-spring-2013.html</link>
+</item>
+<item><title> Bored now </title>
+<category> teaching </category>
+<pubDate> 2013-05-01 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/bored-now.html</link>
+</item>
+<item><title> The geometric definition of the Johnson homomorphism </title>
+<category> topology </category>
+<category> geometry </category>
+<pubDate> 2013-04-26 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/johnson-homomorphism.html</link>
+</item>
+<item><title> TikZ code for the octahedral axiom </title>
+<category> algebra </category>
+<category> tikz </category>
+<pubDate> 2013-03-01 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Convex Integration (talk notes) </title>
+<category> topology </category>
+<pubDate> 2013-02-15 Wed </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/convex-integration-talk-notes.html</link>
+</item>
+<item><title> Convex integration (cartoon) </title>
+<category> topology </category>
+<pubDate> 2013-02-10 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/convex-integration-cartoon.html</link>
+</item>
+<item><title> Kronheimer's argument: Small resolutions and Dehn twists </title>
+<category> geometry </category>
+<category> topology </category>
+<pubDate> 2013-01-27 Sun </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Symplectic/Contact Geometry VII at Les Diablerets, Day 1 </title>
+<category> geometry </category>
+<category> topology </category>
+<pubDate> 2013-01-11 Fri </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/symplectic-contact-7-day-1.html</link>
+</item>
+<item><title> UCL Geometry and Topology Open Day talk: Floer theory </title>
+<category> geometry </category>
+<category> topology </category>
+<pubDate> 2012-11-13 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/ucl-gt-open-day-talk-floer.html</link>
+</item>
+<item><title> Why Schrödinger's equation? </title>
+<category> quantum </category>
+<pubDate> 2012-11-05 Mon </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/why-schrodinger.html</link>
+</item>
+<item><title> HEA course for new maths lecturers </title>
+<category> teaching </category>
+<pubDate> 2012-09-18 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/</link>
+</item>
+<item><title> Lines through four lines </title>
+<category> geometry </category>
+<pubDate> 2012-08-14 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/lines-through-four-lines.html</link>
+</item>
+<item><title> Quantum computers: Grover's algorithm </title>
+<category> quantum </category>
+<pubDate> 2013-08-13 Tue </pubDate>
+<link>https://www.homepages.ucl.ac.uk/~ucahjde/blog/grover.html</link>
+</item>
+</channel>
+</rss>

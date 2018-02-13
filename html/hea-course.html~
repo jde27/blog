@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>HEA course for new maths lecturers</title>
+<!-- 2018-02-13 Tue 12:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">HEA course for new maths lecturers</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">HEA course for new maths lecturers</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2012-09-18 Tue]</span></span>
+</p>
+
+<p>
+Last week I had the pleasure of attending a course for new maths
+lecturers run by the <a href="http://www.heacademy.ac.uk/disciplines/maths-stats-or">Maths, Stats and Operations Research discipline
+of the Higher Education Academy (HEA/MSOR)</a>. I was pleased that it
+dispelled several myths for me, in particular the myth that these
+courses never cater for mathematicians' needs. All the talks were
+given by experienced mathematics lecturers or people who have spent a
+considerable amount of time undertaking educational research specific
+to university-level maths. With such good quality input, and with the
+high level of engagement discussion amongst the participants, I
+learned a lot. Here are a couple of ideas I took away (not necessarily
+maths-specific!).
+</p>
+
+<ul class="org-ul">
+<li>It's important to let people figure things out by themselves. Maybe
+this advice sounds obvious, but I realised during the course that my
+natural inclination when I see someone struggling with a problem for
+more than about a minute is to jump in and suggest or hint at the
+next step. (e.g. "If you don't believe the statement, maybe you
+should just try and write down a counterexample?") If someone
+figures out the answer with my help, that's not as valuable to them
+as figuring out for themselves how to even approach the question in
+the first place. So in future I will try and sit back and listen and
+let my students shine.
+</li>
+<li>Get students to construct examples. I liked this extremely practical
+piece of advice. Instead of giving them a list of examples and
+saying "Check which ones have certain properties," you can instead
+ask them to get their hands dirty and construct examples. You can
+even do this during a lecture to give them time to absorb the
+definitions you've just told them (or to realise that they didn't
+understand something). Much like a radio or an atomic bomb, when you
+construct a mathematical object for yourself you understand it much
+better than if it's handed to you with a set of how-to-use
+instructions.
+</li>
+<li>There's a distinction between problems and exercises, and students
+need both to thrive. Problems being problematic and involving
+thought, exercises being repetitive (even if hard). The point was
+also made that exercises can conceivably be automated and that there
+is software (STACK, due to <a href="http://www.maths.ed.ac.uk/~csangwin/">Chris Sangwin</a>) which interacts with
+Moodle (a popular "virtual learning environment") which allows
+students to respond in mathematics which is then parsed by a
+computer algebra system and the answer is checked. For example, the
+student is asked "Give an example of an odd function", they input
+\(sin(x)\) and the computer checks that they got it right. This has
+the advantage that they can do many exercise and get immediate
+feedback on how they're doing. By contrast, imagine having to mark a
+student's answers to an indeterminate number of randomly generated
+integrals&#x2026; isn't there something better you could be doing with
+your time? You might argue that university level maths involves more
+thought and proof than mindless computation, and maybe this
+automation is more useful for pre-university students. That's
+probably true, but my Methods course this term will involve plenty
+of computation, mindless or otherwise.
+</li>
+<li>New lecturers are overambitious with content. Having lectured two
+graduate-level courses and struggled to say what I wanted to say in
+the time I had to say it, I can testify to this. But can I put this
+observation to use when lecturing this year? My second years had
+better hope so&#x2026;
+</li>
+</ul>
+<p>
+A useful piece of software I encountered was <a href="http://www.geogebra.org/cms/">GeoGebra</a> (for producing
+geometric diagrams, etc.). While it's true that the same results (and
+many more) could be obtained with Maple or Sage, it's also true that
+GeoGebra is free and intuitive, and it's extremely quick to produce
+diagrams of the sort it's good at (not as code-heavy as Maple). I'm
+told there's a 3d version and this would have been useful for
+producing <a href="./lines-through-four-lines.html">these diagrams</a>.
+</p>
+
+<p>
+I can highly recommend this HEA course for new maths/stats lecturers.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

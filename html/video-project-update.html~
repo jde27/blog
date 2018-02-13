@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>December: video project update</title>
+<!-- 2018-02-13 Tue 12:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">December: video project update</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">December: video project update</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2014-12-14 Sun]</span></span>
+</p>
+
+<p>
+The video project has been progressing nicely: all of the videos have
+now been compressed and most have been uploaded to either Youtube or
+Lecturecast.
+</p>
+
+<p>
+The Methods 3 videos have accrued more than 11,000 minutes of views:
+an average of 37 views each with an average view duration of just over
+10 minutes.
+</p>
+
+<p>
+One can make some interesting deductions about study patterns. Methods
+3, Lecture 10, part 1 (with 92 views at an average of 14.41 minutes
+per view) is the most watched. It concerns the theory and computation
+of Fourier series and the application of this to the solution of the
+heat equation. A large number of these views occurred the day before a
+homework was due which made heavy use of the material in this
+lecture. As a counterpoint to this, reading week (when the students
+had extra time to catch up on lectures) was a time of relatively
+low-use. In general, activity peaks around the time when homework
+deadlines loom and I anticipate that we will have another huge peak
+around exam term.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Feedback</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+I have had some very positive feedback about how useful the videos
+have been (even offers to film for free!) and some excellent
+suggestions for improvement. These included adding the date of the
+lecture to the video title (for ease of comparison with lecture notes)
+and giving more detailed descriptions of lecture content in the video
+caption (including timings of different sections of each lecture);
+this would make it easier to navigate through a solid hour of
+material. While I don't have time to do this scrupulously, I have
+added some pointers in some of the videos.
+</p>
+
+<p>
+The audio quality is still pretty poor and I do not know how to
+improve this.
+</p>
+
+<p>
+A Moodle feedback questionnaire had relatively low uptake (11/195
+responses), so nothing of statistically significance can be said. All
+but one respondent thought videos were useful in principle, but by its
+nature the questionnaire is likely to attract responses from students
+who were most enthusiastic about the videos in the first place. The
+comments left were extremely positive.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Lecturecast</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+I had to compress my videos much further before they were able to be
+uploaded to Lecturecast, and the Lecturecast system has proved very
+user-unfriendly. For instance, uploads are made using a Java applet
+which fails to run on Linux because it requires unrestricted
+permissions (even Windows warns you about this and explains that the
+code will soon be deprecated). What’s wrong with a simple HTML upload
+form?
+</p>
+
+<p>
+Note that eight out of the eleven students who responded to the Moodle
+questionnaire preferred the lectures to be available on Youtube rather
+than Lecturecast. Two had no strong opinion. One preferred
+Lecturecast. I do not see that the sample bias present in the
+questionnaire (self-selecting the most enthusiastic students) would
+correlate with this particular variable, so I am inclined to take this
+at face value (bearing in mind that the sample size is rather small).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">The next step</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+At this point in the project two things are clear:
+</p>
+
+<ul class="org-ul">
+<li>Some students are making good use of these resources and appreciate
+their availability.
+</li>
+<li>The scheme would be difficult to implement on a large scale without
+significant help from administrative and technical support staff.
+</li>
+</ul>
+
+<p>
+To elaborate on the second point:
+</p>
+
+<ul class="org-ul">
+<li>Each hour of video is currently taking four hours to compress and
+further time to upload. My laptop is running late into the night and
+at the weekend. This would need to be automated and done on a
+UCL-based computer.
+</li>
+<li>We would need more cameras and more SD cards (to avoid problems with
+batteries running down and memory running out). And better quality
+microphones.
+</li>
+<li>The cost of hiring students to film is nontrivial. I think that
+having mathematically competent human being filming has made a
+significant difference to these videos and we have much better
+quality as a result. But is there room in the department budget to
+run such a project again and on a larger scale?
+</li>
+</ul>
+
+<p>
+I think the full picture of how useful these videos have been will
+only emerge later in the year (at exam time).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

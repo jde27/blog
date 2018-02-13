@@ -1,0 +1,22 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Clarifications and errata
+
+* Clarifications and errata 					     :errata:
+
+[2018-01-31 Wed]
+
+In the spirit of [[https://floerhomology.wordpress.com/2012/02/28/erratum-to-appendix-to-algebraic-torsion-in-contact-manifolds-by-latschev-and-wendl/][Michael Hutchings]] and [[http://www-math.mit.edu/~seidel/right.html#errata][Paul Seidel]], I have decided to use
+this blog to keep track of clarifications and errata for my
+papers. Most of my papers say something wrong or inaccurate but
+nonfatal. In most cases, it doesn't seem worth filing a
+correction. But occasionally someone asks me about one of these things
+and, it being several years since I wrote the paper, I panic all over
+again trying to figure out why their question doesn't invalidate my
+work (piece of advice: when this happens to you, almost always trust
+your past self; they were much more familiar with the paper when they
+were writing it). I will keep the list below updated as I add more
+clarifications and errata to the blog.
+
+- [[./clarification-160608656.org][Clarification for arXiv:1606.08656]] (Markov numbers and Lagrangian
+  cell complexes in the complex projective plane) joint with Ivan
+  Smith.

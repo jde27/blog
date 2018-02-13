@@ -1,6 +1,17 @@
 #+SETUPFILE: ../aux/head.org
 #+TITLE: Blog index
 
+* New blog functionality :blog:
+
+[2018-02-13 Tue]
+
+At the behest of [[http://pbelmans.ncag.info/][Pieter Belmans]], I have now added an [[./rss.xml][RSS feed]] to the
+blog to make it easier for people to follow. I have also added a
+[[./blogroll.org][blogroll]]. Below the line, I include the shell script which I used to
+generate the RSS feed for the blog.
+
+[[./new-functionality.org][Read on for more.]]
+
 * Farmageddon 							:environment:
 
 [2018-02-03 Sat]
@@ -13,35 +24,7 @@ number of years.  It is a dazzling journalistic expose of how
 industrial-scale agriculture and factory farming has systematically
 raped the world's farmlands in the last half century.
 
-The book's main theses are:
-- pasture-reared livestock are a vastly more efficient use of global
-  food resources than factory-farmed animals: pasture-reared animals
-  consume mostly grass and their excrement fertilises the soil; by
-  contrast, factory-farmed animals eat food that could otherwise be
-  fed to humans (grain, soy and fish). Moreover, their waste is
-  difficult to dispose of and, when dumped on arable land en masse as
-  fertiliser, leaks into water systems and causes eutrophism and even
-  health problems in humans.
-- overcrowded conditions for animals risk outbreaks of contagious
-  disease; to combat this, it is necessary to overuse antibiotics,
-  with predictable consequences. Even if the farmed animals are
-  treated, diseases and parasites can escape into and decimate wild
-  animal populations (the particular example chosen to illustrate this
-  was fish-farming of salmon).
-- all of this is driven by overconsumption and waste of cheap meat and
-  fish products. One claim I found particularly staggering was that
-  the equivalent of 11.5 billion chickens each year are wasted
-  worldwide.
-- monoculture and use of chemical weed control, while yielding bigger
-  and more consistent yields, are having a terrifying effect on
-  wildlife, to the extent where (coupled with the effect of climate
-  change) we may be experiencing a mass extinction event, primarily
-  caused by human activity.
-The book concludes with some suggestions for how we, as consumers and
-citizens can make a difference. One prominent suggestion which we can
-implement very easily is to cut down our meat intake, avoid
-factory-farmed products and buy local produce. If you're not
-convinced, you should read the book.
+[[./farmageddon.org][Read on for more.]]
 
 * A crib sheet for surfaces 					   :geometry:
 
@@ -50,8 +33,14 @@ convinced, you should read the book.
 Every time I want to think about complex surfaces, I find I have
 forgotten what things like $q(X)$ and $p_g(X)$ mean and how they are
 related to things like $c_1(X)$ and $c_2(X)$. To save me carrying
-Barth-Peters-Van de Ven around with me, [[./surfaces-crib-sheet.org][here is a blog post containing
-the basic definitions]].
+Barth-Peters-Van de Ven around with me, here is a blog post containing
+the basic definitions.
+
+*Update:* See also [[http://superficie.info/][this page of Pieter Belmans and Johan Commelin]] for an
+interactive complex surface explorer!
+
+[[./surfaces-crib-sheet.org][Read on for more.]]
+
 * Clarification for arXiv:1606.08656 			    :geometry:errata:
 
 [2018-01-31 Wed]
@@ -81,11 +70,9 @@ your past self; they were much more familiar with the paper when they
 were writing it). I will keep the list below updated as I add more
 clarifications and errata to the blog.
 
-- [[./clarification-160608656.org][Clarification for arXiv:1606.08656]] (Markov numbers and Lagrangian
-  cell complexes in the complex projective plane) joint with Ivan
-  Smith.
+[[./clarifications-errata.org][Read on for more.]]
 
-* Flipping 					:teaching:topology:
+* Flipping 						  :teaching:topology:
 
 [2018-01-31 Wed]
 
@@ -102,16 +89,17 @@ In this blog post I want to review:
 - what it means in practice,
 - what I've already done.
 
-[[./flip.org][Read on for more]].
+[[./flip.org][Read on for more.]]
 
 * TikZ and org-mode 					:blog:org:emacs:tikz:
 
 [2017-11-25 Sat]
 
 As an org-mode newbie, it took me a while to figure out how to get
-TikZ code in my source files to generate images in my blog.
+TikZ code in my source files to generate images in my blog. This blog
+post explains the solution I found.
 
-[[./tikz.org][This blog post explains the solution I found.]]
+[[./tikz.org][Read on for more.]]
  
 * Noether's theorem in field theory 					:qft:
 
@@ -120,16 +108,18 @@ TikZ code in my source files to generate images in my blog.
 This blog post attempts to explain Noether's theorem in field theory
 (including Noether currents) in a way that might appeal to a
 mathematician familiar with symplectic topology and the Hamiltonian
-formalism.
+formalism. Hopefully someone will find it useful...
 
-[[./noether.org][Hopefully someone will find it useful...]]
+[[./noether.org][Read on for more.]]
 
 * The Heisenberg picture and causality 					:qft:
 
 [2017-10-25 Wed]
 
-This blog post summarises what we learned about [[./heisenberg.org][propagators and
-causality in free scalar QFT.]]
+This blog post summarises what we learned about propagators and
+causality in free scalar QFT.
+
+[[./heisenberg.org][Read on for more.]]
 
 * What is a quantum field? 						:qft:
 
@@ -140,7 +130,7 @@ bothered me was "what is a quantum field?". This blog post explains
 one point of view (the Schr\ouml{}dinger picture) on the answer to
 this question which I find satisfying.
 
-[[./what-is-qft.org][Read on if you dare]].
+[[./what-is-qft.org][Read on for more.]]
 
 * Pre-QFT 1: the quantum harmonic oscillator 				:qft:
 
@@ -155,7 +145,7 @@ understanding quantum field theory: indeed, quantising a free
 (bosonic) field turns out to be equivalent to quantising an infinite
 collection of simple harmonic oscillators.
 
-[[./shm.org][Read on for a description of this important quantum system.]]
+[[./shm.org][Read on for more.]]
 
 * Quantum field theory reading group 					:qft:
 
@@ -187,7 +177,7 @@ teaching this term, so I have written this blog post to remind you
 what you need to know about them. I will kick off with a few examples,
 then give a more formal definition.
 
-[[./equivalence-relation.org][Read on for more]].
+[[./equivalence-relation.org][Read on for more.]]
 
 * Theorem and proof environments in CSS 			   :blog:org:
 
@@ -196,7 +186,7 @@ then give a more formal definition.
 Here is a nice idea from [[http://drz.ac/2013/01/17/latex-theorem-like-environments-for-the-web/][Dr Z.ac]], the blog of Zachary Harmany. You can
 use CSS to create LaTeX-style theorem/proof environments on a website.
 
-[[./thm-and-proof.org][Read on to find out how...]]
+[[./thm-and-proof.org][Read on for more.]]
 
 * Connecting to wifi from command line 				 :linux:wifi:
 
@@ -219,7 +209,8 @@ $ nmcli dev wifi connect NETWORKNAME password NETWORKPASSWORD
 I've decided that I don't like my old blog and I'm setting up a
 new blog using org-mode.
 
-[[./new-blog.org][Read on to find out how...]]
+[[./new-blog.org][Read on for more.]]
+
 * Resonances 								:qft:
 
 [2016-10-30 Sun]
@@ -228,7 +219,7 @@ How could you "detect" a new subatomic particle, given that it's so
 small you can't see it and (often) so short-lived that you'd miss it
 even if you didn't blink?
 
-[[./resonances.org][Read on to find out how...]]
+[[./resonances.org][Read on for more.]]
 
 * Nice paper bump 							:qft:
 
@@ -252,10 +243,9 @@ it.
 
 [2016-08-09 Tue]
 
-I recently came across
-[[https://en.wikisource.org/wiki/A_proof_of_the_constancy_of_the_velocity_of_light][
-a beautiful argument due to De Sitter (1913)]], which gave the
-(first?) experimental evidence that light moves with a constant speed.
+I recently came across [[https://en.wikisource.org/wiki/A_proof_of_the_constancy_of_the_velocity_of_light][ a beautiful argument due to De Sitter (1913)]],
+which gave the (first?) experimental evidence that light moves with a
+constant speed.
 
 Constancy of the speed of light is one of those things that always
 bothered me, and I spent a couple of days recently trying to unbother
@@ -265,7 +255,7 @@ argument. The De Sitter paper is only a couple of paragraphs long and
 is available via Wikisource, so if you don't need the introductory
 remarks in the blogpost below, just follow the link above and read it.
 
-[[./lightspeed.org][Read on to find out more...]]
+[[./lightspeed.org][Read on for more.]]
 
 * Using graphviz to illustrate course structure     :teaching:
 
@@ -299,6 +289,7 @@ notation. Once you’ve seen how the proof goes, you should go and look
 in Bott-Tu or McCleary for some actual examples and computations.
 
 Please let me know of any errors in the exercises!
+
 * A sanity check for the Fukaya category of a cotangent bundle :geometry:
 
 [2015-02-15 Tue]
@@ -316,6 +307,7 @@ single point) that you should think of this post as more of a sanity
 check.
 
 [[./sanitycheck.org][Read on to test your sanity.]]
+
 * Cone eversion 					  :geometry:
 
 [2014-10-12 Sun]

@@ -4,16 +4,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>A crib sheet for surfaces</title>
-<!-- 2018-02-03 Sat 14:36 -->
+<!-- 2018-02-13 Tue 13:16 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<meta  name="author" content="unknown" />
+<meta  name="author" content="jde27" />
 <meta name='viewport' content='width=device-width,
 initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
 mathematics, geometry, UCL'> <meta name='description'
 content='Blog of the UCL-based mathematician Jonny Evans'>
 <meta name='author' content='Jonny Evans'> 
 <link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -106,7 +107,7 @@ for the JavaScript code in this tag.
 <body>
 <div id="preamble" class="status">
 <div class='banner'>
-<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a></div>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
 </div>
 <div id="content">
 <h1 class="title">A crib sheet for surfaces</h1>
@@ -139,24 +140,6 @@ definitions:
 <p>
 so the Hodge diamond looks like this:
 </p>
-
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\draw[red,line width=3mm,-&gt;,opacity=0.5] (-2.5,0.5) -- (0.75, -2.75);
-\node at (0,0) {$h^{1,1}$};
-\node at (-1,1) {$q$};
-\node at (1,1) {$q$};
-\node at (-1,-1) {$q$};
-\node at (1,-1) {$q$};
-\node at (0,2) {$1$};
-\node at (0,-2) {$1$};
-\node at (-2,0) {$p_g$};
-\node at (2,0) {$p_g$};
-\node at (1,-3) {$\chi$};
-\end{tikzpicture}
-</pre>
-</div>
 
 
 <div class="figure">
@@ -206,22 +189,6 @@ The complex projective plane has \(q=p_g=0\), \(\chi=1\), \(b^+=1\),
 \(c_1^2=9\) and \(c_2=3\). The Hodge diamond is:
 </p>
 
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\node at (0,0) {$1$};
-\node at (-1,1) {$0$};
-\node at (1,1) {$0$};
-\node at (-1,-1) {$0$};
-\node at (1,-1) {$0$};
-\node at (0,2) {$1$};
-\node at (0,-2) {$1$};
-\node at (-2,0) {$0$};
-\node at (2,0) {$0$};
-\end{tikzpicture}
-</pre>
-</div>
-
 
 <div class="figure">
 <p><img src="../img/cp2-hodge.svg" alt="cp2-hodge.svg" />
@@ -237,16 +204,6 @@ The complex projective plane has \(q=p_g=0\), \(\chi=1\), \(b^+=1\),
 A K3 surface has \(q=0\), \(p_g=1\), \(\chi=2\), \(b^+=3\), \(c_1^2=0\) and
 \(c_2=24\). The Hodge diamond is:
 </p>
-
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\node at (0,0) {$20$}; \node at (-1,1) {$0$}; \node at (1,1) {$0$};
-\node at (-1,-1) {$0$}; \node at (1,-1) {$0$}; \node at (0,2) {$1$};
-\node at (0,-2) {$1$}; \node at (-2,0) {$1$}; \node at (2,0) {$1$};
-\end{tikzpicture}
-</pre>
-</div>
 
 
 <div class="figure">
@@ -268,16 +225,6 @@ means \[\chi=\frac{1}{6}d(d^2-6d+11)=p_g+1.\] For example, the Hodge
 diamond of the quintic surface (\(c_1^2=\chi=5\), \(p_g=4\), \(c_2=55\)) is
 therefore:
 </p>
-
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\node at (0,0) {$45$}; \node at (-1,1) {$0$}; \node at (1,1) {$0$};
-\node at (-1,-1) {$0$}; \node at (1,-1) {$0$}; \node at (0,2) {$1$};
-\node at (0,-2) {$1$}; \node at (-2,0) {$4$}; \node at (2,0) {$4$};
-\end{tikzpicture}
-</pre>
-</div>
 
 
 <div class="figure">
@@ -317,20 +264,6 @@ If we plot the region bounded by these inequalities (assuming \(q=0\))
 it looks like this:
 </p>
 
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\draw (0,-0.1) -- (0,9);
-\node at (-0.5,9) {$c_1^2$};
-\draw (-0.1,0) -- (9,0);
-\node at (9,-0.5) {$c_2$};
-\draw (0,0) -- (3,9) node [midway, above, sloped] {BMY line};
-\draw (3,0) -- (9,1.2) node [midway, below, sloped] {Noether line};
-\filldraw[red,opacity=0.5] (0,0) -- (3,9) -- (9,9) -- (9,1.2) -- (3,0);
-\end{tikzpicture}
-</pre>
-</div>
-
 
 <div class="figure">
 <p><img src="../img/geography.svg" alt="geography.svg" />
@@ -342,16 +275,6 @@ it looks like this:
 <div id="outline-container-sec-1-3-2" class="outline-4">
 <h4 id="sec-1-3-2">(Numerically) Godeaux surfaces (\(p_g=q=0\), \(c_1^2=1\))</h4>
 <div class="outline-text-4" id="text-1-3-2">
-<div class="org-src-container">
-
-<pre class="src src-latex">\begin{tikzpicture}
-\node at (0,0) {$9$}; \node at (-1,1) {$0$}; \node at (1,1) {$0$};
-\node at (-1,-1) {$0$}; \node at (1,-1) {$0$}; \node at (0,2) {$1$};
-\node at (0,-2) {$1$}; \node at (-2,0) {$0$}; \node at (2,0) {$0$};
-\end{tikzpicture}
-</pre>
-</div>
-
 
 <div class="figure">
 <p><img src="../img/godeaux-hodge.svg" alt="godeaux-hodge.svg" />
@@ -392,7 +315,7 @@ complex hyperbolic ball.
 </div>
 </div>
 <div id="postamble" class="status">
-<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+<div class='banner'>Comments, corrections and contributions are very welcome; please drop me an email at j.d.evans at ucl.ac.uk if you have something to share.</div><div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
 </div>
 </body>
 </html>

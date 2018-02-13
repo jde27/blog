@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Video-lecture project weeks 1 and 2</title>
+<!-- 2018-02-13 Tue 12:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="jde27" />
+<meta name='viewport' content='width=device-width,
+initial-scale=1.0'> <meta name='keywords' content='Jonny Evans,
+mathematics, geometry, UCL'> <meta name='description'
+content='Blog of the UCL-based mathematician Jonny Evans'>
+<meta name='author' content='Jonny Evans'> 
+<link rel='stylesheet' type='text/css' href='../aux/style.css'/>
+<link rel='alternate' type='application/rss+xml' title='RSS feed' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='banner'>
+<a href='index.html'>Blog index</a> | <a href='http://www.homepages.ucl.ac.uk/~ucahjde'>Homepage</a> | <a href='blogroll.html'>Blogroll</a> | <a href='rss.xml'>RSS feed</a></div>
+</div>
+<div id="content">
+<h1 class="title">Video-lecture project weeks 1 and 2</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Video-lecture project weeks 1 and 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="elearning">elearning</span>&#xa0;<span class="teaching">teaching</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2013-10-10 Thu]</span></span>
+</p>
+
+
+<p>
+The e-learning project for filming maths lectures is now underway
+(into its second week). You can see some of the initial results <a href="http://youtu.be/JQv4QlYOtNM">here</a>
+and <a href="http://youtu.be/44pDNRMW2xM">here</a>. Read on for a summary of the early teething problems we have
+experienced and some of the solutions we have found.
+</p>
+
+<p>
+For various reasons, weeks 1 and 2 of the project have been fraught
+with difficulties. In particular (see below) some of the recordings
+from week 1 were either fragmentary or unusable. We currently have
+usable versions of:
+</p>
+
+<ul class="org-ul">
+<li>Methods 3: the first hour of lecture 2 and all of lecture 3
+</li>
+
+<li>Complex analysis: the first hour of lecture 1, the first hour of
+lecture 2 and all of lecture 3.
+</li>
+</ul>
+
+<p>
+Note that the even-numbered complex analysis lectures are interspersed
+with problem classes and we are only filming the first hour of these.
+</p>
+
+<p>
+However, the biggest problem to date is that Lecturecast (the UCL
+video-lecture storage facility) doesn’t seem to like big files. This
+is why none of the lectures are currently up on Lecturecast. To get
+the feedback rolling in I have decided to upload some of the Methods 3
+lectures to Youtube. For information, I got the go-ahead from UCL
+copyright to do this (under a CC-BY licence): the possible issue was
+that the UCL intellectual property policy states that UCL retains
+copyright where they have provided materials above-and-beyond the
+usual (in our case recording equipment) but I was told that this was
+not a problem so the performance rights are mine: thanks to June
+Hedges and Rod Digges for clarifying this.
+</p>
+
+<p>
+The Methods 3 lectures 2 (part 1) and 3 are available <a href="http://youtu.be/JQv4QlYOtNM">here</a> and <a href="http://youtu.be/44pDNRMW2xM">here</a>.
+</p>
+
+<p>
+Some comments: The audio is poor, probably because I am having to
+speak loudly to a big lecture theatre (the mic is only recording, not
+broadcasting). The video starts a couple of seconds into the lecture
+(sometimes difficult to avoid). The second hour of lecture 2 was not
+captured because of lack of space on the 8GB SD card. We have now
+fixed this for future recordings.
+</p>
+
+<p>
+Some other basic lessons we learnt:
+</p>
+
+<ol class="org-ol">
+<li>Ensure that all equipment is fully charged before attempting to
+film a two hour lecture. The camera battery doesn't actually last a
+full two hours, but then nor does a two-hour lecture. Charging
+between the 9-10am and 11-12am lectures on Wednesdays only just
+recovers enough charge for the second lecture. We have now borrowed
+a cable which allows the camera to film whilst charging from
+e-learning and hopefully this will not be an issue again, but it
+led to some unusably fragmented videos early in week 1.
+</li>
+<li>The Harrie Massey lecture theatre is badly suited for video
+capture. For a start (like the Chemistry lecture theatre) it is
+lacking in good power points to plug in the microphone base and we
+have had to run an extension cable from the front to the first row
+(posing something of a health and safety risk&#x2026;) Moreover, there
+are bulky immovable objects directly in front of the whiteboards,
+rendering it difficult to film from the front row (where we need to
+be for electrical reasons). Bianca sensibly suggested filming
+slightly from one side to avoid these obstructions and this has
+improved matters.
+</li>
+<li>An 8GB SD card is not enough for a two hour lecture. I have now
+bought two 16GB SD cards for this purpose. One must also remember
+to delete videos properly once they are downloaded: either by
+formatting the SD card or removing them from a command line –
+otherwise they go to a hidden trash file and take up space, which
+led to our not being able to film most of Methods 3 Lecture 1.
+</li>
+<li>For uploading to Lecturecast, videos need to be encoded using h.264
+as the video codec and aac as the audio codec. I have been
+compressing and encoding files using the free program FFMPEG (using
+version 1.2.2) but this is not the most user-friendly of programs
+and it is taking a while to get the videos small enough (but high
+enough quality) to upload to Lecturecast. Currently, the command
+<pre class="example">
+$ ffmpeg -y -i ./raw/INPUT -b:v 500000-vcodec libx264 -vsync 1 -r 25 -acodec aac -strict -2 -ab 240k OUTPUT.mp4
+</pre>
+<p>
+is producing decent output (an hour-long lecture taking up
+&lt;270MB). Sometimes the camera produces several output files, which
+can then be concatenated with
+</p>
+<pre class="example">
+$  ffmpeg -f concat -i list.txt -c copy OUTPUT.mp4
+</pre>
+<p>
+where list.txt is a file containing a list in the format:
+</p>
+<pre class="example">
+file './OUTPUT1.mp4'
+file './OUTPUT2.mp4'
+etc.
+</pre>
+</li>
+<li>Because the videos are not being uploaded to Lecturecast (and
+because I am keeping the unprocessed video-files in case I find I
+need an entirely different compression mechanism to get to
+Lecturecast) storage is becoming an issue. If I didn't have storage
+space at home, I would be panicking. My UCL desktop certainly
+doesn't have the storage capacity for even one of the unprocessed
+files and an 8GB memory stick won't store two. I also heartily
+recommend to anyone else running a similar project that you decide
+on an archiving/file-labelling system long in advance and stick to
+it religiously: the files from the camera are all called 0000n.MTS
+for some value of n and this can lead to confusion.
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class='bottomblock'><a class='cc' href='https://creativecommons.org/licenses/by-sa/4.0/legalcode'>CC-BY-SA</a>, Jonny Evans 2017</div>
+</div>
+</body>
+</html>

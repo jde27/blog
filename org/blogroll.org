@@ -1,0 +1,25 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Blogroll
+
+* Blogroll
+
+[2018-02-08 Thu]
+
+Here is a list of blogs and websites which contain interesting and/or
+useful information. If you have a website or blog which you think I
+might find interesting and/or useful, email me!
+
+- [[http://math.ucr.edu/home/baez/][John Baez]]
+- [[https://symplecticfieldtheorist.wordpress.com/][Symplectic Field Theorist]] (blog of [[https://www.mathematik.hu-berlin.de/~wendl/][Chris Wendl]])
+- [[https://floerhomology.wordpress.com/][floerhomology]] (blog of [[https://math.berkeley.edu/~hutching/][Michael Hutchings]])
+- [[https://electrichandleslide.wordpress.com/][The Electric Handleslide]] (group blog in symplectic, contact and
+  low-dimensional topology)
+- [[https://nms.kcl.ac.uk/yanki.lekili/][Yankı Lekili]]
+- [[https://plus.google.com/+DavidRoberts][David Roberts]]
+- [[http://vihart.com/][Vi Hart]]
+- [[http://people.maths.ox.ac.uk/neale/index.html][Vicky Neale]]
+- [[http://pbelmans.ncag.info/][Pieter Belmans]]
+- [[http://www-m8.ma.tum.de/personen/kuehn/][Christian Kuehn]]
+- [[https://plus.google.com/+TimothyGowers0][Tim Gowers]]
+- [[http://www.math.columbia.edu/~woit/wordpress/][Peter Woit]]
+- [[http://backreaction.blogspot.co.uk/][Backreaction]] (blog of Sabine Hossenfelder)
