@@ -190,3 +190,6 @@ These have been studied [[https://www.jstor.org/stable/1971050][by Horikawa]].
 
 Yau proved that surfaces on the BMY line are all uniformised by the
 complex hyperbolic ball.
+
+*Update:* See also [[http://superficie.info/][this page of Pieter Belmans and Johan Commelin]] for an
+interactive complex surface explorer!
