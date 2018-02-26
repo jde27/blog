@@ -1,6 +1,16 @@
 #+SETUPFILE: ../aux/head.org
 #+TITLE: Blog index
 
+* Horikawa surfaces 						   :geometry:
+
+
+[2018-02-26 Mon]
+
+Mostly for my own convenience, here is an overview of the geometry of
+Horikawa surfaces (because I will forget most of this).
+
+[[./horikawa-surfaces.org][Read on for more...]]
+
 * New blog functionality 					       :blog:
 
 [2018-02-13 Tue]

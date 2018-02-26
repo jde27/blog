@@ -1,0 +1,193 @@
+#+SETUPFILE: ../aux/head.org
+#+TITLE: Horikawa surfaces
+
+* Horikawa surfaces
+
+** Horikawa's work
+
+A /Horikawa surface/ is a minimal surface of general type with
+geometric genus $p_g\geq 3$ which lies on the /Noether line/
+$c_1^2=2p_g-4$. These all have irregularity zero. This means that the
+Chern numbers are given in terms of $p_g$ by \[c_1^2=2p_g-4,\quad
+c_2=10p_g+16\] These surfaces were studied extensively [[https://www.jstor.org/stable/1971050][by
+Horikawa]]. Here is a summary of what he proved. Let $n=p_g-1$.
+
+- The canonical map $\Phi_K\colon X\to\mathbf{CP}^n$ has image a
+  surface $W=\Phi_K(X)$ of degree $n-1$ in $\mathbf{CP}^n$ (Lemma
+  1.1). Write $f\colon X\to W$ for the corestriction; then $f$ is a
+  double branched cover. The ramification locus $R\subset X$ of $f$
+  satisfies $K_X=f^*K_W+R$; the branch locus $B\subset W$ is the
+  pushforward $f_*R$ and has no multiple component.
+- The image $W$ of $f$ is one of the following
+  (Lemma 1.2):
+  + "Type (\infty)": ($n=2$) the whole of $\mathbf{CP}^2$ or ($n=5$)
+    the quadratic Veronese surface
+    $\mathbf{CP}^2\subset\mathbf{CP}^5$.
+  + "Type (d)": ($n\geq 3$) a Hirzebruch surface $\mathbf{F}_d$ where
+    $d+3\leq n$ and $n-d-3$ is even, embedded into $\mathbf{CP}^n$ via
+    the linear system $\left|\Delta_0+\frac{n-1+d}{2}\Gamma\right|$
+    where $\Gamma$ is a fibre of $\mathbf{F}_d\to\mathbf{CP}^1$ and
+    $\Delta_0$ is the unique section with square $-d$. In fact, we
+    will see below that $n\geq\max(d+3,2d-3)$.
+  + "Type (d')": ($n\geq 3$) the cone $C_{n-1}$ on a rational curve of
+    degree $d=n-1$ in $\mathbf{CP}^{n-1}\subset\mathbf{CP}^n$. In
+    fact, this is only possible for $n=3,4,5$.
+  We will analyse the possible branch curves case-by-case below.
+- If $K^2$ is not divisible by 8 ($p_g\neq 2\mod 4$) then any two
+  Horikawa surfaces with this value of $K^2$ can be connected through
+  deformations (i.e. there is a path in the Gieseker moduli space
+  connecting these surfaces: note that this path may connect different
+  irreducible components of the moduli space, but all surfaces along
+  the path are diffeomorphic).
+- If $k\geq 2$, $K^2=8k$ ($p_g=4k+2$) then there are two deformation
+  classes of Horikawa surfaces with this value of $K^2$ (Theorem
+  7.1). These comprise, on the one hand, surfaces of type (d) with $d$
+  even and $d\leq 2k$, and, on the other, surfaces of type (2k+2).
+  - If, moreover, $k$ is even, then these surfaces are homotopy
+    equivalent.
+  - If, instead, $k$ is odd, then they are distinguished by the second
+    Stiefel-Whitney class (type $(2k+2)$ is spin/has even intersection
+    form, the others are not spin/have odd intersection form).
+
+** TODO $K^2=8$
+
+** Type (\infty)
+
+($n=2$) The surface $W$ is the whole of $\mathbf{CP}^2$; the
+ramification locus is then homologous to $4f^*H$ (as $K_X=f^*H$ and
+$K_W=-3H$) so the branch locus $B$ is a curve of degree 8 in
+$\mathbf{CP}^2$.
+
+($n=5$) The surface $W$ is the quadratic Veronese surface
+$\mathbf{CP}^2\subset\mathbf{CP}^5$. We have $K_X=\Phi_K^*H$, but
+$\Phi_K$ is the composition of $f$ with the inclusion of the
+(degree 2) Veronese surface, so if $h$ is the hyperplane class on
+$\mathbf{CP}^2$ we get $\Phi_K^*H=2f^*h$. We also have
+$f^*K_W=-3g^*h$, so $R=5g^*h$ and the branch locus $B$ is a curve of
+degree 10.
+
+** Type (d)
+
+($n\geq 3$) The surface $W$ is a Hirzebruch surface $\mathbf{F}_d$
+where $n-d-3$ is a nonnegative even integer, embedded into
+$\mathbf{CP}^n$ via the linear system
+$\left|\Delta_0+\frac{n-1+d}{2}\Gamma\right|$ where $\Gamma$ is a
+fibre of $\mathbf{F}_d\to\mathbf{CP}^1$ and $\Delta_0$ is the unique
+section with square $-d$.
+
+In this case, if $i\colon W\to\mathbf{CP}^n$ is the inclusion, we have
+\[K_X=\Phi_K^*H=(i\circ
+f)^*H=f^*\left(\Delta_0+\frac{n-1+d}{2}\Gamma\right)\] and
+$K_W=-2\Delta_0-(d+2)\Gamma$, so
+$R=f^*\left(3\Delta_0+\frac{n+3d+3}{2}\Gamma\right)$. Therefore the
+branch locus $B$ is homologous to $6\Delta_0+(n+3d+3)\Gamma$. Note
+that since $B$ has no multiple component, its intersection number with
+$\Delta_0$ must be at least $-d$ (it equals $-d$ if $B=\Delta_0$ and
+it increases for every other component of $B$). This means
+$\Delta_0\cdot B=n-3d+3\geq -d$ or $d\leq \frac{1}{2}(n+3)$.
+
+When $d\leq (n+3)/3$ the generic curves in the class
+$B=6\Delta_0+(n+3+3d)\Gamma$ are smooth and irreducible. When
+$(n+3)/2\geq d>(n+3)/3$, the generic curves in the class $B$ are
+reducible of the form $\Delta_0+B_0$ where $B_0$ is an irreducible
+smooth curve which intersects $\Delta_0$ transversely at $n+3-2d$
+points. In particular, when $n=2d-3$, $\Delta_0$ and $B_0$ are
+disjoint.
+
+** Type (d')
+
+($n\geq 3$) The surface $W$ is the cone $C_{n-1}$ on a rational curve
+of degree $d=n-1$ in $\mathbf{CP}^{n-1}\subset\mathbf{CP}^n$. In this
+case, $f$ factors through the minimal resolution $\mathbf{F}_{n-1}\to
+C_{n-1}$ (Lemma 1.5). The branch locus in $\mathbf{F}_{n-1}$ is
+homologous to $6\Delta_0+4n\Gamma$ and, again, $\Delta_0\cdot B\geq
+-(n-1)$. This means $n\leq 5$ (in fact the only possibilities are
+$n=3,4,5$).
+
+** Fintushel and Stern on Horikawa surfaces
+
+[[https://arxiv.org/abs/alg-geom/9505018][Fintushel and Stern]], in their classic paper on rational blowdown,
+study a family of Horikawa surfaces they call $H(N)$ with
+$K^2=2N-6$. This has $p_g=N-1$, so $n=N-2$. They take a surface of
+type (0), which is then a branched cover of $\mathbf{F}_0$ with branch
+locus $B=6\Delta_0+(N+1)\Gamma$. They point out that, smoothly, this
+is the same as taking the branched cover of $\mathbf{F}_{N-3}$
+branched over $4(\Delta+\Gamma)+2\Delta_0$ (where
+$\Delta=\Delta_0+(N-3)\Gamma$ is the class of a positive section). At
+least this makes sense when $N$ is odd so that $\mathbf{F}_{N-3}$ is
+diffeomorphic to $\mathbf{F}_0$. Note that the choice of Hirebruch
+surface they give would correspond to type (N-3) in Horikawa's
+terminology, which is actually forbidden ($d\leq n-3=N-5$).
+
+Their motivation for choosing this Hirzebruch surface is that they can
+find a rational homology ball $B_{N-2,1}$ in $\mathbf{F}_{N-3}$ whose
+complement contains the branch curve. One can see this explicitly in
+an almost toric picture for the Hirzebruch surface:
+
+#+HEADER: :file ../img/fintushel-stern.svg :imagemagick yes
+#+HEADER: :results output silent  :headers '("\\usepackage{tikz}")
+#+HEADER: :fit yes :imoutoptions -geometry 400 :iminoptions -density 600
+#+BEGIN_src latex
+  \begin{tikzpicture}
+  \draw (0,0) -- (7,0) -- (1,2) -- (0,2) -- (0,0);
+  \node at (3.5,-0.5) {$\Delta$};
+  \node at (-0.5,1) {$\Gamma$};
+  \node at (0.5,2.5) {$\Delta_0$};
+  \draw[dotted] (0.2,0.2) -- (8/3,8/3);
+  \node at (0.2,0.2) {$\star$};
+  \end{tikzpicture}
+#+END_src
+
+[[../img/fintushel-stern.svg]]  
+
+*Figure 1:* /An almost toric picture of the Hirzebruch surface
+$\mathbf{F}_{N-3}$: we have performed a nodal trade at the bottom/
+/left corner so that a neighbourhood of the dotted line is a rational
+homology ball $B_{N-2,1}$ (the numbers $(N-2,1)$ can be read off from/
+/how the dotted line intersects the sloping edge). Note that for this
+picture to make sense, we need the length of $\Gamma$ to be strictly/
+/bigger than 1, otherwise the dotted line (with slope 1) will not
+intersect the sloping edge at an internal point. The length of the/
+/long bottom edge is $N-2$./
+
+In the branched double cover we can therefore find two disjoint
+rational homology balls (note that $N-2$ is odd, and
+$\pi_1(B_{N-2,1})$ is cyclic of order $N-2$, so the rational homology
+ball lifts in two different ways to the double cover). Fintushel and
+Stern prove that the result of rationally blowing down these two
+rational homology balls in $H(N)$ is an elliptic surface $E(N)$.
+
+** TODO fix diagram
+
+** TODO The Lee-Park construction
+
+Apart from their explicit description as branched double covers of
+Hirzebruch surfaces, [[https://arxiv.org/abs/0708.3319][Lee and Park]] have given another construction of
+the (class?) Horikawa surfaces via $\mathbf{Q}$-Gorenstein smoothing
+of a singular surface (with two Wahl singularities) whose minimal
+resolution is a blow-up of an elliptic surface.
+
+** The famous open problem
+
+The "most interesting case" from the points of view of low-dimensional
+topology is the case $K^2=16\ell$, $p_g=8\ell+2$ ($n=8\ell+1$). In
+this case we have two deformation classes of Horikawa surfaces, and we
+know that the corresponding surfaces are homotopy equivalent. In fact,
+all known smooth 4-manifold invariants fail to distinguish them, and
+it is a tantalising open problem to determine whether or not they are
+diffeomorphic.
+- One (type (0)) is given by the branched double cover of
+  $\mathbf{F}_0=S^2\times S^2$ branched along a smooth, connected
+  curve in the homology class $6\Delta_0+(n+3)\Gamma$. In
+  Fintushel-Stern notation from the previous subsection, this is
+  $H(8\ell+3)$.
+- The other (type (4\ell+2)) is a branched cover of
+  $\mathbf{F}_{4\ell+2}$ branched over a disconnected curve
+  $\Delta_0\cup B_0$ where $B_0=5(\Delta_0+(4\ell+2)\Gamma)=5\Delta$.
+One can also take the canonical symplectic form on these and ask if
+they are /symplectomorphic/. The answer is not known; see [[https://arxiv.org/abs/math/0605692][Auroux's
+paper]] on Horikawa surfaces for more discussion about this symplectic
+version of the question focusing on the smallest case $\ell=1$,
+$K^2=16$.
+
+

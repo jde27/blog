@@ -58,6 +58,7 @@ numbers $c_2$, $c_1^2$ and the number $b^+$ as follows.
 - By the Hodge index theorem, the negative part of the intersection
   form is of dimension $h^{1,1}-1$, so we have $b^+=2p_g+1$,
 
+
 ** Examples
 
 *** $\mathbf{CP}^2$
@@ -133,7 +134,7 @@ therefore:
 The characteristic numbers of minimal surfaces of general type satisfy
 some further inequalities:
 - Noether's inequality: \[p_g\leq \frac{1}{2}c_1^2+2.\] When $q=0$, we
-  have $\frac{1}{2}(c_1^2+c_2)=\chi=p_g+1$ and this inequality becomes
+  have $\frac{1}{12}(c_1^2+c_2)=\chi=p_g+1$ and this inequality becomes
   \[c_2\leq 5c_1^2+36.\]
 - The Bogomolov-Miyaoka-Yau inequality:
   \[c_1^2\leq 3c_2.\]
@@ -184,7 +185,8 @@ numerically Godeaux surfaces, see [[https://homepages.warwick.ac.uk/~masda/Repri
 
 *** Horikawa surfaces (on the Noether line)
 
-These have been studied [[https://www.jstor.org/stable/1971050][by Horikawa]].
+These have been studied [[https://www.jstor.org/stable/1971050][by Horikawa]]. See [[./horikawa-surfaces.org][this summary]] for much more
+information about these surfaces.
 
 *** Ball quotients (on BMY line)
 

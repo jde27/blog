@@ -1,9 +1,0 @@
-;; The defaults mathjax is old and slow
-(setf org-html-mathjax-options
-      '((path "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
-        (scale "100")
-        (align "center")
-        (indent "2em")
-        (mathml nil)))
-(setf org-html-mathjax-template
-"<script type=\"text/javascript\" src=\"%PATH\"></script>")
